@@ -39,7 +39,51 @@ design-forge export ember  --target ./out --framework nextjs
 design-forge preview coral
 ```
 
-> Full worked examples (front-matter shape, export layout, programmatic API, the 74-spec corpus) are in **[docs/USAGE.md](docs/USAGE.md)**.
+> Full worked examples (front-matter shape, export layout, programmatic API, the corpus) are in **[docs/USAGE.md](docs/USAGE.md)**. The brand corpus inventory is in **[docs/CORPUS.md](docs/CORPUS.md)**.
+
+### CLI command surface
+
+All commands accept either a **brand id** (built-in or ingested) or a **path to a `DESIGN.md` spec file**.
+
+```bash
+# List every brand (built-in reference + ingested corpus)
+design-forge list
+
+# Inspect a brand: resolved palette, radius, typography, terminal swatches
+design-forge inspect linear-dark
+design-forge inspect design-md/kraken/DESIGN.md
+
+# Validate one spec or a whole directory (--strict fails fast on errors)
+design-forge validate design-md --strict
+design-forge validate design-md/figma/DESIGN.md --strict
+
+# Export a theme + components into a real project
+design-forge export linear-dark --target ./out/linear --framework vite
+design-forge export figma        --target ./out/figma --framework nextjs
+
+# Launch the interactive showroom (localhost:5180/?brand=<id>)
+design-forge preview            # aurora by default
+design-forge preview coral-pop
+
+# Re-bake the ingested-brand registry from design-md/
+design-forge ingest design-md
+design-forge ingest design-md --validate
+
+# Import an upstream variant into canonical DESIGN.md
+design-forge adapter material ./tokens.json --out ./design-md/mybrand/DESIGN.md
+design-forge adapter flat     ./palette.json
+
+# Token diff between two brand configurations (id or .md path)
+design-forge diff linear-dark vercel-inspired-design-analysis
+
+# Publish/packaging readiness check
+design-forge ready
+design-forge ready --target ./out/linear
+```
+
+> `design-forge` maps to `pnpm exec tsx src/cli/index.ts`. To make it a global
+> command, a human must authorize `pnpm link --global` (see issue #3) — automation
+> will not run that.
 
 ### Ingesting the 74-spec corpus
 
