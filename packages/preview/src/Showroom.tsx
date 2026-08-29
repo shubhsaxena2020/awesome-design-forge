@@ -1,6 +1,7 @@
 import * as React from "react";
-import { getBrand, loadAllBrands } from "../../../src/brands/tokens.ts";
+import { getBrand, loadAllBrands, loadAllSpecs } from "../../../src/brands/tokens.ts";
 import { emitThemeCss } from "../../../src/generators/css-variables.ts";
+import { diffTokens, formatDiff, summarizeDiff } from "../../../src/transformers/token-diff.ts";
 import { Button, Card, Input, Navbar, NavLink } from "./ui.tsx";
 
 const FONT_STACK: Record<string, string> = {};
@@ -13,14 +14,23 @@ function resolveBrand(id: string) {
   const { brands } = loadAllBrands();
   return brands.find((b) => b.id === id) ?? getBrand(id);
 }
+function resolveSpec(id: string) {
+  const { specs } = loadAllSpecs();
+  return specs.find((s) => s.id === id);
+}
 
-export function Showroom({ brandId }: { brandId: string }) {
+export function Showroom({ brandId, diffPair }: { brandId: string; diffPair?: [string, string] }) {
+  if (diffPair) return <DiffView a={diffPair[0]} b={diffPair[1]} />;
+  return <BrandView brandId={brandId} />;
+}
+
+function BrandView({ brandId }: { brandId: string }) {
   const brand = resolveBrand(brandId);
+  const spec = resolveSpec(brandId);
   const [dark, setDark] = React.useState(true);
   const [modalOpen, setModalOpen] = React.useState(false);
   const [val, setVal] = React.useState("");
 
-  // Inject the GENERATED theme css (req 6) into the document.
   React.useEffect(() => {
     const id = "df-theme";
     let el = document.getElementById(id) as HTMLStyleElement | null;
@@ -32,12 +42,10 @@ export function Showroom({ brandId }: { brandId: string }) {
     el.textContent = emitThemeCss(brand);
   }, [brand]);
 
-  // Toggle .dark on <html> for the dark-mode override.
   React.useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
   }, [dark]);
 
-  // Load the brand fonts (Google Fonts) so typography specimens render for real.
   React.useEffect(() => {
     const fams = [gfont(brand.typography.heading), gfont(brand.typography.body)]
       .map((f) => f.replace(/ /g, "+"))
@@ -78,13 +86,46 @@ export function Showroom({ brandId }: { brandId: string }) {
       </Navbar>
 
       <main className="mx-auto max-w-5xl px-6 py-10">
-        <header className="mb-10">
+        <header className="mb-8">
           <p className="text-sm text-muted-foreground">design-forge preview · brand</p>
           <h1 className="text-4xl font-bold tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
             {brand.name}
           </h1>
           <p className="mt-2 max-w-2xl text-muted-foreground">{brand.description}</p>
         </header>
+
+        {/* Side-by-side: input spec · resolved tokens · generated output (#6) */}
+        <section className="mb-10 grid gap-4 md:grid-cols-3">
+          <Card className="p-4">
+            <h2 className="mb-2 text-sm font-semibold text-muted-foreground">Input spec</h2>
+            <dl className="space-y-1 text-xs">
+              <div><dt className="inline font-medium">id</dt> <dd className="inline">{spec?.id ?? brand.id}</dd></div>
+              <div><dt className="inline font-medium">name</dt> <dd className="inline">{spec?.name ?? brand.name}</dd></div>
+              <div><dt className="inline font-medium">radius</dt> <dd className="inline">{spec?.elevation?.radius ?? brand.radius}</dd></div>
+              <div><dt className="inline font-medium">heading</dt> <dd className="inline">{spec?.typography.heading.fontFamily ?? brand.typography.heading}</dd></div>
+              <div><dt className="inline font-medium">body</dt> <dd className="inline">{spec?.typography.body.fontFamily ?? brand.typography.body}</dd></div>
+            </dl>
+          </Card>
+          <Card className="p-4">
+            <h2 className="mb-2 text-sm font-semibold text-muted-foreground">Resolved tokens</h2>
+            <dl className="space-y-1 text-xs">
+              <div><dt className="inline font-medium">primary</dt> <dd className="inline">{brand.colors.primary}</dd></div>
+              <div><dt className="inline font-medium">secondary</dt> <dd className="inline">{brand.colors.secondary}</dd></div>
+              <div><dt className="inline font-medium">accent</dt> <dd className="inline">{brand.colors.accent}</dd></div>
+              <div><dt className="inline font-medium">radius</dt> <dd className="inline">{brand.radius}</dd></div>
+              <div><dt className="inline font-medium">heading</dt> <dd className="inline">{brand.typography.heading}</dd></div>
+            </dl>
+          </Card>
+          <Card className="flex flex-col justify-center gap-2 p-4">
+            <h2 className="mb-2 text-sm font-semibold text-muted-foreground">Generated output</h2>
+            <div className="flex flex-wrap gap-2">
+              <Button variant="primary">Primary</Button>
+              <Button variant="secondary">Secondary</Button>
+              <Button variant="accent">Accent</Button>
+            </div>
+            <Input placeholder="Sample input" />
+          </Card>
+        </section>
 
         {/* Typography specimens */}
         <section className="mb-10">
@@ -98,10 +139,6 @@ export function Showroom({ brandId }: { brandId: string }) {
             </div>
             <p style={{ fontFamily: "var(--font-body)" }} className="text-base">
               Body text · {brand.typography.body} — The quick brown fox jumps over the lazy dog.
-              1234567890 — Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className="text-sm text-muted-foreground" style={{ fontFamily: "var(--font-body)" }}>
-              Small / muted text sample.
             </p>
           </div>
         </section>
@@ -151,7 +188,6 @@ export function Showroom({ brandId }: { brandId: string }) {
           </div>
         </section>
 
-        {/* Modal (Radix Dialog) */}
         {modalOpen && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
@@ -177,9 +213,40 @@ export function Showroom({ brandId }: { brandId: string }) {
 
         <footer className="mt-12 border-t border-border pt-4 text-xs text-muted-foreground">
           All {loadAllBrands().brands.length} reference brands available via{" "}
-          <code className="rounded bg-muted px-1">?brand=ID</code> · theme compiled from generated CSS vars.
+          <code className="rounded bg-muted px-1">?brand=ID</code> · compare two with{" "}
+          <code className="rounded bg-muted px-1">?diff=ID_A,ID_B</code> · theme compiled from generated CSS vars.
         </footer>
       </main>
+    </div>
+  );
+}
+
+function DiffView({ a, b }: { a: string; b: string }) {
+  const ba = resolveBrand(a);
+  const bb = resolveBrand(b);
+  const changes = diffTokens(ba, bb);
+  const summary = summarizeDiff(changes);
+  const colorFor = (k: string) =>
+    k === "added" ? "text-green-600" : k === "removed" ? "text-red-600" : k === "changed" ? "text-amber-600" : "text-muted-foreground";
+
+  return (
+    <div className="min-h-screen bg-background p-8 text-foreground">
+      <h1 className="text-2xl font-bold" style={{ fontFamily: "var(--font-heading)" }}>
+        Token diff: {ba.id} → {bb.id}
+      </h1>
+      <p className="mb-4 text-sm text-muted-foreground">
+        {summary.added} added · {summary.removed} removed · {summary.changed} changed · {summary.unchanged} unchanged
+      </p>
+      <pre className="overflow-auto rounded-[var(--radius)] border border-border bg-card p-4 text-xs leading-relaxed">
+        {changes.map((c, i) => (
+          <div key={i} className={colorFor(c.kind)}>
+            {c.kind === "added" && `+ ${c.path} = ${c.to}`}
+            {c.kind === "removed" && `- ${c.path} (was ${c.from})`}
+            {c.kind === "changed" && `~ ${c.path}: ${c.from} → ${c.to}`}
+            {c.kind === "unchanged" && `  ${c.path} = ${c.from}`}
+          </div>
+        ))}
+      </pre>
     </div>
   );
 }

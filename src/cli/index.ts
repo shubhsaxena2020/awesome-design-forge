@@ -14,6 +14,7 @@ import { parseDesignMd, discoverBrandFiles } from "../parser/design-parser.ts";
 import { specToBrandTokens } from "../generators/adapter.ts";
 import { formatValidationReport, assertValidDesignSpec, SpecValidationError } from "../parser/validate.ts";
 import { checkPublishReadiness, formatReadiness } from "../package/ready.ts";
+import { diffTokens, formatDiff, summarizeDiff } from "../transformers/token-diff.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 /** Resolve a brand by id from the merged built-in + ingested set. */
@@ -59,7 +60,18 @@ function cmdList() {
   for (const w of warnings) ok(`  ! ${w}`);
 }
 
-// ---- ready (publish readiness) ----
+// ---- diff (token diff between two brands) ----
+async function cmdDiff(a: string, b: string) {
+  const ba = await resolveBrandOrFile(a);
+  const bb = await resolveBrandOrFile(b);
+  const changes = diffTokens(ba, bb);
+  const summary = summarizeDiff(changes);
+  ok(`Token diff: ${ba.id} -> ${bb.id}`);
+  ok(`  ${summary.added} added, ${summary.removed} removed, ${summary.changed} changed, ${summary.unchanged} unchanged\n`);
+  ok(formatDiff(changes, { onlyChanged: true }));
+}
+
+
 function cmdReady(opts: { target?: string; strict?: boolean }) {
   const dir = opts.target ? path.resolve(opts.target) : path.join(__dirname, "..", "..");
   const findings = checkPublishReadiness(dir, {
@@ -411,6 +423,18 @@ program
   .option("--target <dir>", "directory to check (default: this repo)")
   .action((opts: { target?: string }) => {
     Promise.resolve(cmdReady(opts)).catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
+  });
+
+program
+  .command("diff")
+  .argument("<a>", "brand id OR .md spec path")
+  .argument("<b>", "brand id OR .md spec path")
+  .description("Show a token diff between two brand configurations (additions/removals/changes)")
+  .action((a: string, b: string) => {
+    Promise.resolve(cmdDiff(a, b)).catch((e) => {
       console.error(e);
       process.exit(1);
     });
