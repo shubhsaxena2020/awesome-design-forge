@@ -4,6 +4,137 @@ import type { DesignSpec } from "../spec/types.ts";
 
 export const INGESTED_SPECS: DesignSpec[] = [
   {
+    "id": "seed-noisy",
+    "name": "Seed Noisy",
+    "description": "Intentionally noisy edge-case brand — oklch colors, tertiary alias, unusual radius, missing description. Exercises the lenient parser path. Seed fixture for the visual-regression suite.",
+    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/_seed-noisy/DESIGN.md",
+    "colors": {
+      "background": "#0b0f1a",
+      "foreground": "#e6edf6",
+      "primary": "oklch(0.62 0.19 250)",
+      "secondary": "#46484d",
+      "accent": "oklch(0.7 0.16 320)",
+      "muted": "#1b2233",
+      "destructive": "#ff5a5f",
+      "border": "#2a3247",
+      "extra": {
+        "on-canvas": "#e6edf6",
+        "neutral-200": "#1b2233",
+        "surface-200": "#141a2b"
+      }
+    },
+    "typography": {
+      "heading": {
+        "fontFamily": "Space Grotesk",
+        "fontStack": [
+          "Space Grotesk",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "fontSizePx": 56,
+        "letterSpacingEm": -0.02
+      },
+      "body": {
+        "fontFamily": "IBM Plex Sans",
+        "fontStack": [
+          "IBM Plex Sans",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "fontSizePx": 16
+      },
+      "roles": {
+        "title": {
+          "fontFamily": "Space Grotesk",
+          "fontStack": [
+            "Space Grotesk",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ],
+          "fontSizePx": 32
+        },
+        "body-sm": {
+          "fontFamily": "IBM Plex Sans",
+          "fontStack": [
+            "IBM Plex Sans",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ],
+          "fontSizePx": 14
+        }
+      },
+      "baseSizePx": 16
+    },
+    "elevation": {
+      "radius": "0.75rem",
+      "radii": {
+        "sm": "0.25rem",
+        "md": "0.75rem",
+        "lg": "1.25rem",
+        "xl": "2rem"
+      },
+      "shadows": {
+        "md": "0 4px 16px rgba(0,0,0,0.45)",
+        "lg": "0 12px 40px rgba(0,0,0,0.55)"
+      }
+    },
+    "components": {},
+    "warnings": []
+  },
+  {
+    "id": "seed-sparse",
+    "name": "Seed Sparse",
+    "description": "Intentionally minimal brand — sparse token set (only base palette, no extra roles). Seed fixture for the visual-regression suite.",
+    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/_seed-sparse/DESIGN.md",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#101010",
+      "primary": "#7c3aed",
+      "secondary": "#64748b",
+      "accent": "#7c3aed",
+      "muted": "#f1f5f9",
+      "destructive": "#dc2626",
+      "border": "#e2e8f0",
+      "extra": {}
+    },
+    "typography": {
+      "heading": {
+        "fontFamily": "Inter",
+        "fontStack": [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "fontSizePx": 30
+      },
+      "body": {
+        "fontFamily": "Inter",
+        "fontStack": [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "fontSizePx": 16
+      },
+      "roles": {},
+      "baseSizePx": 16
+    },
+    "elevation": {
+      "radius": "0.5rem",
+      "radii": {
+        "base": "0.5rem"
+      }
+    },
+    "components": {},
+    "warnings": []
+  },
+  {
     "id": "airbnb-design-analysis",
     "name": "Airbnb-design-analysis",
     "description": "A warm, generous consumer marketplace anchored on a clean white canvas and Airbnb Rausch (#ff385c), the single brand voltage that carries every primary CTA, search-button orb, and rating dot. Type runs Airbnb Cereal VF at modest weights — display sits at 22–28px in weight 500/600 rather than the heavy 700+ that fintech and enterprise systems use; the brand trusts photography and generous whitespace over typographic muscle. Three product entries (Homes, Experiences, Services) sit in the top nav with hand-illustrated 32-icon glyphs and \"NEW\" badges, signaling a marketplace expansion rather than a feature dump. Pill-shaped search bars (`{rounded.full}`), softly rounded property cards (`{rounded.lg}` ~14px), and 32px button radii read as friendly and human — there is no hard corner anywhere except the body grid.",
@@ -35,7 +166,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-soft": "#f7f7f7",
         "surface-card": "#ffffff",
         "surface-strong": "#f2f2f2",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "legal-link": "#428bff",
         "star-rating": "#222222",
@@ -663,7 +793,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "signature-mint": "#a8d8c4",
         "signature-yellow": "#f4d35e",
         "signature-mustard": "#d9a441",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "link": "#1b61c9",
         "link-active": "#1a3866",
@@ -1185,7 +1314,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-tile-3": "#252527",
         "surface-black": "#000000",
         "surface-chip-translucent": "#d2d2d7",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff"
       }
     },
@@ -1714,7 +1842,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-elevated-dark": "#2b3139",
         "surface-soft-light": "#fafafa",
         "surface-strong-light": "#f5f5f5",
-        "on-primary": "#181a20",
         "on-dark": "#ffffff",
         "trading-up": "#0ecb81",
         "trading-down": "#f6465d",
@@ -2316,7 +2443,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-strong": "#ebebeb",
         "surface-dark": "#1a2129",
         "surface-dark-elevated": "#262e38",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "on-dark-soft": "#bbbbbb",
         "m-blue-light": "#0066b1",
@@ -2807,7 +2933,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-card": "#1a1a1a",
         "surface-elevated": "#262626",
         "surface-soft": "#0d0d0d",
-        "on-primary": "#000000",
         "on-dark": "#ffffff",
         "m-blue-light": "#0066b1",
         "m-blue-dark": "#1c69d4",
@@ -3262,7 +3387,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-soft": "#0d0d0d",
         "surface-card": "#141414",
         "surface-elevated": "#1f1f1f",
-        "on-primary": "#000000",
         "on-dark": "#ffffff",
         "on-photo": "#ffffff",
         "link": "#c3d9f3",
@@ -3668,7 +3792,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-strong": "#e5e7eb",
         "surface-dark": "#101010",
         "surface-dark-elevated": "#1a1a1a",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "on-dark-soft": "#a1a1aa",
         "brand-accent": "#3b82f6",
@@ -4172,7 +4295,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-dark": "#181715",
         "surface-dark-elevated": "#252320",
         "surface-dark-soft": "#1f1e1b",
-        "on-primary": "#ffffff",
         "on-dark": "#faf9f5",
         "on-dark-soft": "#a09d96",
         "accent-teal": "#5db8a6",
@@ -4729,7 +4851,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-strong": "#ebe6d6",
         "surface-dark": "#0a1a1a",
         "surface-dark-elevated": "#1a2a2a",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "on-dark-soft": "#a0a0a0",
         "brand-pink": "#ff4d8b",
@@ -5255,7 +5376,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-card": "#1a1a1a",
         "surface-elevated": "#242424",
         "surface-yellow-band": "#faff69",
-        "on-primary": "#0a0a0a",
         "on-dark": "#ffffff",
         "on-yellow": "#0a0a0a",
         "accent-emerald": "#22c55e",
@@ -5791,7 +5911,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "coral": "#ff7759",
         "coral-soft": "#ffad9b",
         "form-focus": "#9b60aa",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff"
       }
     },
@@ -6163,7 +6282,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-strong": "#eef0f3",
         "surface-dark": "#0a0b0d",
         "surface-dark-elevated": "#16181c",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "on-dark-soft": "#a8acb3",
         "semantic-up": "#05b169",
@@ -6721,7 +6839,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-card": "#181818",
         "surface-card-elevated": "#222222",
         "surface-strong": "#2a2a2a",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "accent-cyan": "#00d4ff",
         "accent-violet": "#7b3aed",
@@ -7250,7 +7367,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "canvas-soft": "#fafaf7",
         "surface-card": "#ffffff",
         "surface-strong": "#e6e5e0",
-        "on-primary": "#ffffff",
         "timeline-thinking": "#dfa88f",
         "timeline-grep": "#9fc9a2",
         "timeline-read": "#9fbbe0",
@@ -7753,7 +7869,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#000000",
         "frame-ink": "#000000",
         "yellow-sticker": "#fcc20f",
@@ -8450,7 +8565,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-strong": "#f0f0f3",
         "surface-dark": "#171717",
         "surface-dark-elevated": "#1a1a1a",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "on-dark-soft": "#b0b4ba",
         "gradient-sky-light": "#cfe7ff",
@@ -8936,7 +9050,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "surface-card": "#303030",
         "surface-soft-light": "#f7f7f7",
         "surface-strong-light": "#ebebeb",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "on-light": "#181818",
         "accent-yellow-hypersail": "#fff200",
@@ -9407,7 +9520,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#000000",
         "inverse-canvas": "#000000",
         "inverse-ink": "#ffffff",
@@ -9875,7 +9987,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#262626",
       "onPrimary": "#000000",
       "extra": {
-        "on-primary": "#000000",
         "accent-blue": "#0099ff",
         "ink": "#ffffff",
         "ink-muted": "#999999",
@@ -10322,7 +10433,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#1e1e1e",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "accent-blue": "#2b89ff",
         "ink": "#ffffff",
         "ink-muted": "#b2b6bd",
@@ -10792,7 +10902,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#dcdbd9",
       "onPrimary": "#F7F5F2",
       "extra": {
-        "on-primary": "#F7F5F2",
         "on-tertiary": "#F7F5F2",
         "on-neutral": "#1A1C1E"
       }
@@ -10899,7 +11008,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "primary-bright": "#296ef9",
         "primary-deep": "#0e3191",
         "primary-soft": "#c9e0fc",
-        "on-primary": "#ffffff",
         "ink": "#1a1a1a",
         "ink-deep": "#000000",
         "ink-soft": "#292929",
@@ -11480,7 +11588,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#161616",
         "ink-muted": "#525252",
         "ink-subtle": "#8c8c8c",
@@ -11954,7 +12061,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#d9d5d1",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#111111",
         "ink-muted": "#626260",
         "ink-subtle": "#7b7b78",
@@ -12611,7 +12717,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#232424",
       "onPrimary": "#08090A",
       "extra": {
-        "on-primary": "#08090A",
         "on-tertiary": "#FFFFFF",
         "on-neutral": "#E6E6E6"
       }
@@ -12713,7 +12818,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#1f1f20",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "primary-hover": "#828fff",
         "primary-focus": "#5e69d1",
         "ink": "#f7f8f8",
@@ -13378,7 +13482,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "extra": {
         "primary-deep": "#0457cb",
         "primary-soft": "#0091ff",
-        "on-primary": "#ffffff",
         "ink-button": "#000000",
         "on-ink-button": "#ffffff",
         "fb-blue": "#1876f2",
@@ -13991,7 +14094,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#dbdbdd",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "primary-soft": "#181e25",
         "brand-coral": "#ff5530",
         "brand-magenta": "#ea5ec1",
@@ -14658,7 +14760,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#dbdbdb",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "brand-green": "#00d4a4",
         "brand-green-deep": "#00b48a",
         "brand-green-soft": "#7cebcb",
@@ -15453,7 +15554,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#dbdbdd",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "brand-yellow": "#ffd02f",
         "brand-yellow-deep": "#fcb900",
         "yellow-light": "#fff4c4",
@@ -16212,7 +16312,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "onPrimary": "#ffffff",
       "extra": {
         "primary-deep": "#cc3a05",
-        "on-primary": "#ffffff",
         "sunshine-300": "#ffd06a",
         "sunshine-500": "#ffb83e",
         "sunshine-700": "#ffa110",
@@ -16923,7 +17022,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "extra": {
         "primary-deep": "#00b545",
         "primary-pressed": "#008c34",
-        "on-primary": "#001e2b",
         "brand-green": "#00ed64",
         "brand-green-dark": "#00684a",
         "brand-green-mid": "#00a35c",
@@ -17633,7 +17731,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#262626",
       "onPrimary": "#0A0A0A",
       "extra": {
-        "on-primary": "#0A0A0A",
         "on-tertiary": "#0A0A0A",
         "on-neutral": "#F4F4F5",
         "surface-code": "#18181B",
@@ -17696,7 +17793,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "soft-cloud": "#f5f5f5",
         "ink": "#111111",
         "charcoal": "#39393b",
@@ -18243,7 +18339,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "hairline": "#5a5f8c",
         "ink": "#21242e",
         "ink-soft": "#3d4f97",
-        "on-primary": "#ffffff",
         "systems-teal": "#206479",
         "games-red": "#a7282b"
       }
@@ -18797,7 +18892,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "extra": {
         "primary-pressed": "#4534b3",
         "primary-deep": "#3a2a99",
-        "on-primary": "#ffffff",
         "brand-navy": "#0a1530",
         "brand-navy-deep": "#070f24",
         "brand-navy-mid": "#1a2a52",
@@ -19559,7 +19653,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#000000",
       "extra": {
-        "on-primary": "#000000",
         "primary-dark": "#5a8d00",
         "ink": "#000000",
         "surface-dark": "#000000",
@@ -20118,7 +20211,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#000000",
         "ink-deep": "#090909",
         "charcoal": "#525252",
@@ -20569,7 +20661,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e0dfdf",
       "onPrimary": "#fdfcfc",
       "extra": {
-        "on-primary": "#fdfcfc",
         "ink": "#201d1d",
         "ink-deep": "#0f0000",
         "charcoal": "#302c2c",
@@ -20964,7 +21055,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "onPrimary": "#ffffff",
       "onSecondary": "#000000",
       "extra": {
-        "on-primary": "#ffffff",
         "primary-pressed": "#cc001f",
         "ink": "#000000",
         "ink-soft": "#211922",
@@ -20975,7 +21065,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "stone": "#c8c8c1",
         "hairline": "#dadad3",
         "hairline-soft": "#e5e5e0",
-        "on-secondary": "#000000",
         "secondary-bg": "#e5e5e0",
         "secondary-pressed": "#c8c8c1",
         "surface-soft": "#fbfbf9",
@@ -21476,7 +21565,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "extra": {
         "primary-pressed": "#0064b7",
         "primary-active": "#004d8d",
-        "on-primary": "#ffffff",
         "link-light": "#0064b7",
         "link-dark": "#53b1ff",
         "commerce": "#d53b00",
@@ -22032,7 +22120,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "extra": {
         "primary-pressed": "#dd9001",
         "primary-active": "#b17816",
-        "on-primary": "#23251d",
         "ink": "#23251d",
         "body": "#4d4f46",
         "charcoal": "#33342d",
@@ -22767,7 +22854,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "onPrimary": "#000000",
       "extra": {
         "primary-deep": "#e6d200",
-        "on-primary": "#000000",
         "ink": "#000000",
         "body": "#222222",
         "charcoal": "#333333",
@@ -23240,7 +23326,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "onPrimary": "#ffffff",
       "extra": {
         "primary-deep": "#c01f00",
-        "on-primary": "#ffffff",
         "ink": "#202020",
         "body": "#3a3a3a",
         "charcoal": "#575757",
@@ -24220,7 +24305,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "extra": {
         "primary-bright": "#4f55f1",
         "primary-deep": "#3a40c4",
-        "on-primary": "#ffffff",
         "ink": "#191c1f",
         "body": "#1f2226",
         "charcoal": "#3a3d40",
@@ -24936,7 +25020,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "onPrimary": "#ffffff",
       "extra": {
         "ink-deep": "#1f1633",
-        "on-primary": "#ffffff",
         "accent-lime": "#c2ef4e",
         "accent-pink": "#fa7faa",
         "accent-violet": "#6a5fc1",
@@ -25465,7 +25548,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "onPrimary": "#ffffff",
       "extra": {
         "ink": "#000000",
-        "on-primary": "#ffffff",
         "on-dark": "#ffffff",
         "canvas-night": "#000000",
         "canvas-night-elevated": "#0a0a0a",
@@ -25972,7 +26054,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "primary-deep": "#481a54",
         "primary-press": "#611f69",
         "primary-tint": "#592466",
-        "on-primary": "#ffffff",
         "ink": "#1d1d1d",
         "ink-mute": "#696969",
         "link-blue": "#1264a3",
@@ -26388,7 +26469,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "onPrimary": "#ffffff",
       "extra": {
         "ink": "#000000",
-        "on-primary": "#ffffff",
         "on-primary-mute": "#f0f0fa",
         "canvas-night": "#000000",
         "canvas-night-soft": "#0a0a0a",
@@ -26895,7 +26975,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#dbdddf",
       "onPrimary": "#FFFFFF",
       "extra": {
-        "on-primary": "#FFFFFF",
         "on-tertiary": "#FFFFFF"
       }
     },
@@ -26990,7 +27069,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
         "ink-secondary": "#273951",
         "ink-mute": "#64748d",
         "ink-mute-2": "#61718a",
-        "on-primary": "#ffffff",
         "canvas-soft": "#f6f9fc",
         "canvas-cream": "#f5e9d4",
         "hairline": "#e3e8ee",
@@ -27546,7 +27624,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "onPrimary": "#ffffff",
       "extra": {
         "primary-deep": "#0e0c1f",
-        "on-primary": "#ffffff",
         "ink": "#292827",
         "ink-mute": "#73706d",
         "ink-faint": "#9a9794",
@@ -28178,7 +28255,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#000000",
         "body": "#959494",
         "hairline": "#959494",
@@ -28805,7 +28881,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#000000",
         "body": "#5e5e5e",
         "mute": "#afafaf",
@@ -29419,7 +29494,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#171717",
         "body": "#4d4d4d",
         "mute": "#888888",
@@ -30111,8 +30185,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "onPrimary": "#F0FDF4",
       "onSecondary": "#052E16",
       "extra": {
-        "on-primary": "#F0FDF4",
-        "on-secondary": "#052E16",
         "on-tertiary": "#F0FDF4",
         "on-neutral": "#14532D"
       }
@@ -30214,7 +30286,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#25282b",
         "body": "#7e7e7e",
         "mute": "#bebebe",
@@ -30791,7 +30862,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "extra": {
         "primary-soft": "#2fd6a1",
         "primary-deep": "#10b981",
-        "on-primary": "#101010",
         "ink": "#f2f2f2",
         "ink-strong": "#ffffff",
         "body": "#bdbdbd",
@@ -31336,7 +31406,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#443f3c",
       "onPrimary": "#2b2622",
       "extra": {
-        "on-primary": "#2b2622",
         "ink": "#f7f5f0",
         "body": "#c9c0ad",
         "body-strong": "#dad2c1",
@@ -31863,7 +31932,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#080808",
         "ink-strong": "#222222",
         "body": "#363636",
@@ -32459,7 +32527,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#ffffff",
       "extra": {
-        "on-primary": "#ffffff",
         "ink": "#000000",
         "ink-soft": "#1a1a1a",
         "body": "#757575",
@@ -32978,7 +33045,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e2e2",
       "onPrimary": "#0e0f0c",
       "extra": {
-        "on-primary": "#0e0f0c",
         "primary-active": "#cdffad",
         "primary-neutral": "#c5edab",
         "primary-pale": "#e2f6d5",
@@ -33509,7 +33575,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#272727",
       "onPrimary": "#0a0a0a",
       "extra": {
-        "on-primary": "#0a0a0a",
         "ink": "#ffffff",
         "ink-hover": "#fafaf7",
         "body": "#dadbdf",
@@ -33966,7 +34031,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       "border": "#e2e1de",
       "onPrimary": "#fffefb",
       "extra": {
-        "on-primary": "#fffefb",
         "ink": "#201515",
         "ink-soft": "#2f2a26",
         "ink-mid": "#36342e",

@@ -10,8 +10,13 @@ import {
   generateComponent,
   PRIMITIVES,
 } from "../generators/component-factory.ts";
-import { parseDesignMd } from "../parser/design-parser.ts";
+import { parseDesignMd, discoverBrandFiles } from "../parser/design-parser.ts";
 import { specToBrandTokens } from "../generators/adapter.ts";
+import { formatValidationReport, assertValidDesignSpec, SpecValidationError } from "../parser/validate.ts";
+import type { DesignSpec } from "../spec/types.ts";
+import { checkPublishReadiness, formatReadiness } from "../package/ready.ts";
+import { diffTokens, formatDiff, summarizeDiff } from "../transformers/token-diff.ts";
+import { materialToDesignSpec, flatToDesignSpec } from "../adapters/material-shim.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 /** Resolve a brand by id from the merged built-in + ingested set. */
@@ -43,6 +48,31 @@ function ok(s: string) {
   process.stdout.write(s + "\n");
 }
 
+/** Render a DesignSpec back to a DESIGN.md front-matter document. */
+function specToMarkdown(spec: DesignSpec): string {
+  const lines: string[] = ["---"];
+  lines.push(`name: ${spec.name}`);
+  lines.push(`id: ${spec.id}`);
+  if (spec.description) lines.push(`description: ${spec.description}`);
+  lines.push("colors:");
+  for (const [k, v] of Object.entries(spec.colors)) {
+    if (k === "extra") continue;
+    lines.push(`  ${k}: ${v}`);
+  }
+  lines.push("typography:");
+  lines.push(`  heading:`);
+  lines.push(`    fontFamily: ${spec.typography.heading.fontFamily}`);
+  lines.push(`    fontSize: ${spec.typography.heading.fontSizePx}`);
+  lines.push(`  body:`);
+  lines.push(`    fontFamily: ${spec.typography.body.fontFamily}`);
+  lines.push(`    fontSize: ${spec.typography.body.fontSizePx}`);
+  lines.push(`rounded:`);
+  lines.push(`  base: ${spec.elevation?.radius ?? "0.5rem"}`);
+  lines.push("---");
+  lines.push("");
+  return lines.join("\n");
+}
+
 // ---- list ----
 function cmdList() {
   const { brands, ingested, warnings } = loadAllBrands();
@@ -55,6 +85,80 @@ function cmdList() {
   if (ingested > 0) ok(`${total} brands (${ingested} ingested from design-md/). Inspect one with: design-forge inspect <id>`);
   else ok(`${total} built-in brands. Inspect one with: design-forge inspect <id>`);
   for (const w of warnings) ok(`  ! ${w}`);
+}
+
+// ---- diff (token diff between two brands) ----
+async function cmdDiff(a: string, b: string) {
+  const ba = await resolveBrandOrFile(a);
+  const bb = await resolveBrandOrFile(b);
+  const changes = diffTokens(ba, bb);
+  const summary = summarizeDiff(changes);
+  ok(`Token diff: ${ba.id} -> ${bb.id}`);
+  ok(`  ${summary.added} added, ${summary.removed} removed, ${summary.changed} changed, ${summary.unchanged} unchanged\n`);
+  ok(formatDiff(changes, { onlyChanged: true }));
+}
+
+// ---- adapter (import an upstream variant -> canonical DESIGN.md) ----
+function cmdAdapter(kind: string, input: string, opts: { out?: string }) {
+  const data = JSON.parse(fs.readFileSync(input, "utf8"));
+  let spec: DesignSpec;
+  if (kind === "material") spec = materialToDesignSpec(data);
+  else if (kind === "flat") spec = flatToDesignSpec(data.id, data.hex ?? []);
+  else {
+    console.error(`Unknown adapter "${kind}". Supported: material, flat`);
+    process.exit(2);
+    return;
+  }
+  const md = specToMarkdown(spec);
+  if (opts.out) {
+    fs.writeFileSync(opts.out, md);
+    ok(`Wrote ${kind} adapter output -> ${opts.out} (validate with: design-forge validate ${opts.out})`);
+  } else {
+    process.stdout.write(md + "\n");
+  }
+}
+
+
+function cmdReady(opts: { target?: string; strict?: boolean }) {
+  const dir = opts.target ? path.resolve(opts.target) : path.join(__dirname, "..", "..");
+  const findings = checkPublishReadiness(dir, {
+    requireLicense: true,
+    requireRepository: true,
+  });
+  const okAll = findings.every((f) => f.ok);
+  ok(formatReadiness({ ok: okAll, findings }));
+  if (!okAll) process.exit(2);
+}
+
+
+async function cmdValidate(arg: string, opts: { strict?: boolean }) {
+  const files = arg.endsWith(".md") && fs.existsSync(arg) && fs.statSync(arg).isFile()
+    ? [arg]
+    : await discoverBrandFiles(arg);
+  if (!files.length) {
+    console.error(`! No brand specs found at: ${arg}`);
+    process.exit(1);
+  }
+  let allOk = true;
+  for (const f of files) {
+    const spec = await parseDesignMd(f);
+    if (opts.strict) {
+      try {
+        assertValidDesignSpec(spec);
+        ok(`✓ ${spec.id} valid`);
+      } catch (e) {
+        allOk = false;
+        if (e instanceof SpecValidationError) for (const l of e.errors) ok(`✗ ${spec.id} ${l.path}: ${l.message}`);
+        else ok(`✗ ${spec.id} ${String((e as Error).message)}`);
+      }
+    } else {
+      const r = formatValidationReport(spec);
+      allOk = allOk && r.ok;
+      for (const l of r.lines) ok(l);
+      for (const w of spec.warnings) ok(`  ! warning: ${w}`);
+    }
+  }
+  if (!allOk) process.exit(2);
 }
 
 // ---- inspect ----
@@ -290,10 +394,26 @@ async function cmdPreview(id?: string) {
 const program = new Command();
 program
   .name("design-forge")
-  .description("Generate shadcn themes + brand-themed UI primitives from brand tokens.")
-  .version("0.1.0");
+  .description(
+    "Generate shadcn themes + brand-themed UI primitives from brand DESIGN.md specs.\n\n" +
+      "Flows: list | inspect | export | validate | preview | ingest.\n" +
+      "Every command accepts a brand id OR a path to a DESIGN.md spec file.",
+  )
+  .version("1.1.0");
 
 program.command("list").description("List all brands (built-in + ingested DESIGN.md specs)").action(cmdList);
+
+program
+  .command("validate")
+  .argument("<brand-or-dir>", "brand id, path to a DESIGN.md spec, or a directory of specs")
+  .option("--strict", "fail fast with precise errors (exit 2) instead of reporting warnings")
+  .description("Validate brand specs (strict schema, colors, contrast, radius)")
+  .action((arg: string, opts: { strict?: boolean }) => {
+    Promise.resolve(cmdValidate(arg, opts)).catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
+  });
 
 program
   .command("inspect")
@@ -312,9 +432,22 @@ program
   .requiredOption("--target <dir>", "output directory")
   .option("--framework <fw>", "vite | nextjs", "vite")
   .option("--force", "overwrite an existing, non-empty target directory")
+  .option("--validate", "validate the spec first and abort on strict errors")
   .description("Inject theme + components into a real project (brand id OR .md spec path)")
-  .action((id: string, opts: { target: string; framework: "vite" | "nextjs" }) => {
-    Promise.resolve(cmdExport(id, opts)).catch((e) => {
+  .action((id: string, opts: { target: string; framework: "vite" | "nextjs"; force?: boolean; validate?: boolean }) => {
+    Promise.resolve(
+      (async () => {
+        if (opts.validate && id.endsWith(".md") && fs.existsSync(id)) {
+          const spec = await parseDesignMd(id);
+          assertValidDesignSpec(spec); // throws SpecValidationError -> caught below
+        }
+        await cmdExport(id, opts);
+      })(),
+    ).catch((e) => {
+      if (e instanceof SpecValidationError) {
+        console.error(`! Validation failed:\n${e.message}`);
+        process.exit(2);
+      }
       console.error(e);
       process.exit(1);
     });
@@ -332,10 +465,49 @@ program
   });
 
 program
+  .command("ready")
+  .description("Check publish/packaging readiness (version, license, repository, scripts)")
+  .option("--target <dir>", "directory to check (default: this repo)")
+  .action((opts: { target?: string }) => {
+    Promise.resolve(cmdReady(opts)).catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
+  });
+
+program
+  .command("adapter")
+  .argument("<kind>", "upstream variant: material | flat")
+  .argument("<input>", "path to upstream JSON tokens")
+  .option("--out <file>", "write the converted DESIGN.md to this path (default: stdout)")
+  .description("Import an upstream design-system variant -> canonical DESIGN.md (roadmap #5)")
+  .action((kind: string, input: string, opts: { out?: string }) => {
+    try {
+      cmdAdapter(kind, input, opts);
+    } catch (e) {
+      console.error(e);
+      process.exit(1);
+    }
+  });
+
+program
+  .command("diff")
+  .argument("<a>", "brand id OR .md spec path")
+  .argument("<b>", "brand id OR .md spec path")
+  .description("Show a token diff between two brand configurations (additions/removals/changes)")
+  .action((a: string, b: string) => {
+    Promise.resolve(cmdDiff(a, b)).catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
+  });
+
+program
   .command("ingest")
   .argument("<dir>", "directory of DESIGN.md specs (recursive)")
+  .option("--validate", "validate each spec and report failures after baking")
   .description("Ingest DESIGN.md brand specs into the brand registry and report")
-  .action(async (dir: string) => {
+  .action(async (dir: string, opts: { validate?: boolean }) => {
     const abs = path.resolve(dir);
     if (!fs.existsSync(abs) || !fs.statSync(abs).isDirectory()) {
       console.error(`! Spec directory not found: ${abs}`);
@@ -355,6 +527,25 @@ program
     } else {
       ok("\nNo warnings.");
     }
+    if (opts.validate) {
+      ok("\nValidation:");
+      let bad = 0;
+      for (const f of await discoverBrandFiles(abs)) {
+        const spec = await parseDesignMd(f);
+        const r = formatValidationReport(spec);
+        for (const l of r.lines) ok(`  ${l}`);
+        if (!r.ok) bad++;
+      }
+      if (bad) {
+        console.error(`! ${bad} spec(s) failed validation`);
+        process.exit(2);
+      }
+    }
   });
+
+// Default command: when invoked with no subcommand, list brands (sensible default).
+if (process.argv.length <= 2) {
+  cmdList();
+}
 
 program.parse();

@@ -4,6 +4,48 @@ import type { BrandTokens } from "./tokens.ts";
 
 export const INGESTED: BrandTokens[] = [
   {
+    "id": "seed-noisy",
+    "name": "Seed Noisy",
+    "description": "Intentionally noisy edge-case brand — oklch colors, tertiary alias, unusual radius, missing description. Exercises the lenient parser path. Seed fixture for the visual-regression suite.",
+    "colors": {
+      "background": "#0b0f1a",
+      "foreground": "#e6edf6",
+      "primary": "oklch(0.62 0.19 250)",
+      "secondary": "#46484d",
+      "accent": "oklch(0.7 0.16 320)",
+      "muted": "#1b2233",
+      "destructive": "#ff5a5f",
+      "border": "#2a3247"
+    },
+    "radius": "0.75rem",
+    "typography": {
+      "heading": "Space Grotesk",
+      "body": "IBM Plex Sans",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "seed-sparse",
+    "name": "Seed Sparse",
+    "description": "Intentionally minimal brand — sparse token set (only base palette, no extra roles). Seed fixture for the visual-regression suite.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#101010",
+      "primary": "#7c3aed",
+      "secondary": "#64748b",
+      "accent": "#7c3aed",
+      "muted": "#f1f5f9",
+      "destructive": "#dc2626",
+      "border": "#e2e8f0"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
     "id": "airbnb-design-analysis",
     "name": "Airbnb-design-analysis",
     "description": "A warm, generous consumer marketplace anchored on a clean white canvas and Airbnb Rausch (#ff385c), the single brand voltage that carries every primary CTA, search-button orb, and rating dot. Type runs Airbnb Cereal VF at modest weights — display sits at 22–28px in weight 500/600 rather than the heavy 700+ that fintech and enterprise systems use; the brand trusts photography and generous whitespace over typographic muscle. Three product entries (Homes, Experiences, Services) sit in the top nav with hand-illustrated 32-icon glyphs and \"NEW\" badges, signaling a marketplace expansion rather than a feature dump. Pill-shaped search bars (`{rounded.full}`), softly rounded property cards (`{rounded.lg}` ~14px), and 32px button radii read as friendly and human — there is no hard corner anywhere except the body grid.",

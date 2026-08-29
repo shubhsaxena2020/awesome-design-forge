@@ -14,6 +14,11 @@ pnpm test:visual                         # starts the showroom (webServer) + scr
 
 First run seeds baselines (passes). Later runs diff against them.
 
+The showroom renders a **side-by-side** view (input spec · resolved tokens ·
+generated output) for any brand via `?brand=<id>`, and a **token-diff view**
+via `?diff=<idA>,<idB>` that color-codes additions/removals/changes. The same
+diff logic powers the offline `design-forge diff <a> <b>` CLI command.
+
 ## Why it is NOT executed on the build VPS
 
 The CI/build host (this VPS) lacks chromium's required system shared
