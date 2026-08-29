@@ -1,4 +1,6 @@
 import type { BrandTokens } from "../brands/tokens.ts";
+import type { DesignSpec } from "../spec/types.ts";
+import { specToBrandTokens } from "./adapter.ts";
 
 /**
  * shadcn/Tailwind v4 theme emitter.
@@ -216,7 +218,17 @@ export function emitTailwindTheme(b: BrandTokens): string {
   --font-heading: ${b.typography.heading}, ui-sans-serif, system-ui, sans-serif;
   --font-body: ${b.typography.body}, ui-sans-serif, system-ui, sans-serif;
 }
-
 @import "./theme.css";
 `;
+}
+
+/**
+ * Bridge overload: emit the shadcn CSS-variable theme for a Phase A
+ * `DesignSpec` by adapting it to `BrandTokens` (single source of truth — the
+ * shadcn var mapping lives only in `emitThemeCss`/`emitLightVars`/`emitDarkVars`).
+ * This lets the parser output feed the exact same, tested shadcn emitter that
+ * the built-in demo brands use, with light + dark mode.
+ */
+export function emitThemeCssForSpec(spec: DesignSpec): string {
+  return emitThemeCss(specToBrandTokens(spec));
 }
