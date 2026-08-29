@@ -1,6 +1,6 @@
 {
   "name": "awesome-design-forge",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "private": true,
   "type": "module",
   "description": "Design-spec parser + theme generator: turn brand DESIGN.md tokens into shadcn/Tailwind v4 themes, brand-themed React primitives, a live preview showroom, and a CLI.",
@@ -24,6 +24,8 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "vitest run",
     "test:watch": "vitest",
     "gen:theme": "tsx src/cli/index.ts export aurora --target /tmp/df-demo --framework vite",
@@ -46,6 +48,7 @@
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9",
     "@playwright/test": "^1.49.1",
     "@tailwindcss/vite": "^4.0.0",
     "@types/js-yaml": "^4.0.9",
@@ -53,10 +56,12 @@
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9",
     "lightningcss": "^1.28.2",
     "tailwindcss": "^4.0.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
+    "typescript-eslint": "^8",
     "vite": "^6.0.5",
     "vitest": "^2.1.8"
   }

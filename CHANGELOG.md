@@ -1,6 +1,25 @@
 # Changelog
 
-## [1.8.0] - 2026-08-29 (design-forge)
+## [1.9.0] - 2026-08-29 (design-forge)
+
+### DX / CI (Backlog Phase C)
+- **Added `pnpm lint`** (Backlog C10): ESLint 9 flat config (`eslint.config.js`)
+  with `typescript-eslint` recommended rules. `no-explicit-any` and
+  `no-non-null-assertion` are warnings (non-blocking); `no-debugger` is an error.
+  Generated artifacts (`src/brands/ingested*.ts`) are ignored.
+- **CI**: new `lint` job runs `pnpm lint` on `ubuntu-latest` (node 22) alongside
+  the existing `test` matrix and `visual` job.
+- `pnpm-lock.yaml` updated for the new dev dependencies.
+
+### Also in Phase C
+- C11 (README CLI command surface) and C12 (CONTRIBUTING.md) were delivered in
+  Phase A; C13 (`docs/RELEASE-CHECKLIST.md`) already existed.
+
+### Verification (offline)
+- `pnpm lint` → 0 errors (13 pre-existing warnings, non-blocking).
+- `pnpm typecheck` clean; `pnpm test` → 289 passed.
+
+
 
 ### Tests / robustness (Backlog Phase B)
 - **`src/adapters/__tests__/adapters-negative.test.ts`** (B5): brand adapters/shims
