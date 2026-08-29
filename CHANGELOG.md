@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.7.0] - 2026-08-29 (design-forge)
+
+### Docs / hygiene (Backlog Phase A)
+- **`docs/CORPUS.md`** (new): full 84-brand inventory (71 front-matter, 13
+  prose/best-effort, 2 seed), with source-shape caveats and an "extend the set"
+  walkthrough.
+- **`docs/CORPUS.md`** documents the **84 vs the issue's "74-source" count** delta
+  (+10): the local `design-md/` carries more sources than the original Windows 74
+  set. Not a defect; no transfer performed.
+- **`CONTRIBUTING.md`** (new): the required branch -> PR -> squash-merge -> tag ->
+  release workflow, plus human-gated operations (#3, visual-reseed).
+- **README.md**: full CLI command surface (`list`/`inspect`/`validate`/`export`/
+  `preview`/`ingest`/`adapter`/`diff`/`ready`) with verified examples.
+- **`src/__tests__/no-todo.test.ts`** (new guard): fails if any `TODO`/`FIXME` is
+  reintroduced in `src/` (closes the last open source-hygiene item).
+- `docs/RELEASE-CHECKLIST.md` already present (Phase C13 — verified, no-op).
+
+### Notes
+- A1 (move SMALL-SCREEN/UX docs) was N/A — no such docs exist in repo root.
+
 ## [1.6.0] - 2026-08-29 (design-forge)
 
 ### Added
