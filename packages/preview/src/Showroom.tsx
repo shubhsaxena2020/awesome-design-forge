@@ -1,7 +1,7 @@
 import * as React from "react";
 import { getBrand, loadAllBrands, loadAllSpecs } from "../../../src/brands/tokens.ts";
 import { emitThemeCss } from "../../../src/generators/css-variables.ts";
-import { diffTokens, formatDiff, summarizeDiff } from "../../../src/transformers/token-diff.ts";
+import { diffTokens, summarizeDiff } from "../../../src/transformers/token-diff.ts";
 import { Button, Card, Input, Navbar, NavLink } from "./ui.tsx";
 
 const FONT_STACK: Record<string, string> = {};
