@@ -3,6 +3,7 @@ import * as path from "node:path";
 import * as yaml from "js-yaml";
 import type { BrandTokens } from "./tokens.ts";
 import { parseDesignMdCached, clearSpecCache } from "../parser/cache.ts";
+import { isBrandSpec } from "../parser/design-parser.ts";
 import { specToBrandTokens } from "../generators/adapter.ts";
 import type { DesignSpec } from "../spec/types.ts";
 
@@ -240,15 +241,7 @@ export function ingestDir(dir: string): IngestResult {
   if (!fs.existsSync(dir)) {
     return { brands: [], files: 0, warnings: [`directory not found: ${dir}`] };
   }
-  const files: string[] = [];
-  const walk = (p: string) => {
-    for (const e of fs.readdirSync(p, { withFileTypes: true })) {
-      const fp = path.join(p, e.name);
-      if (e.isDirectory()) walk(fp);
-      else if (e.name.toLowerCase().endsWith(".md")) files.push(fp);
-    }
-  };
-  walk(dir);
+  const files = walkSpecFiles(dir);
 
   const brands: BrandTokens[] = [];
   const seen = new Set<string>();
@@ -275,20 +268,32 @@ export function ingestDir(dir: string): IngestResult {
  * Phase A DesignSpec via specToBrandTokens. Canonical path shared with the CLI
  * export/inspect commands.
  */
-export async function ingestDirSpecs(dir: string): Promise<IngestResult> {
-  const warnings: string[] = [];
-  if (!fs.existsSync(dir)) {
-    return { brands: [], files: 0, warnings: [`directory not found: ${dir}`] };
-  }
+/**
+ * Collect every `.md` path under `dir` (recursive) that is a real brand spec.
+ * Placeholder README/prose docs are filtered out via {@link isBrandSpec} so the
+ * baked registry never contains phantom `Unknown`/`readme-md` brands.
+ */
+function walkSpecFiles(dir: string): string[] {
   const files: string[] = [];
   const walk = (p: string) => {
     for (const e of fs.readdirSync(p, { withFileTypes: true })) {
       const fp = path.join(p, e.name);
       if (e.isDirectory()) walk(fp);
-      else if (e.name.toLowerCase().endsWith(".md")) files.push(fp);
+      else if (e.name.toLowerCase().endsWith(".md") && isBrandSpec(fs.readFileSync(fp, "utf8"))) {
+        files.push(fp);
+      }
     }
   };
   walk(dir);
+  return files;
+}
+
+export async function ingestDirSpecs(dir: string): Promise<IngestResult> {
+  const warnings: string[] = [];
+  if (!fs.existsSync(dir)) {
+    return { brands: [], files: 0, warnings: [`directory not found: ${dir}`] };
+  }
+  const files = walkSpecFiles(dir);
 
   const brands: BrandTokens[] = [];
   const seen = new Set<string>();
@@ -318,15 +323,7 @@ export async function ingestDirDesignSpecs(dir: string): Promise<{ specs: Design
   if (!fs.existsSync(dir)) {
     return { specs: [], files: 0, warnings: [`directory not found: ${dir}`] };
   }
-  const files: string[] = [];
-  const walk = (p: string) => {
-    for (const e of fs.readdirSync(p, { withFileTypes: true })) {
-      const fp = path.join(p, e.name);
-      if (e.isDirectory()) walk(fp);
-      else if (e.name.toLowerCase().endsWith(".md")) files.push(fp);
-    }
-  };
-  walk(dir);
+  const files = walkSpecFiles(dir);
 
   const specs: DesignSpec[] = [];
   const seen = new Set<string>();

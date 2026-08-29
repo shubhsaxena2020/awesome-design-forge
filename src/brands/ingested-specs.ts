@@ -712,55 +712,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/airbnb/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "airtable-design-analysis",
     "name": "Airtable-design-analysis",
     "description": "A sober, editorial workflow-software interface anchored on white canvas and dark-ink type, where brand voltage comes from full-bleed signature cards in coral, dark green, peach, and dark navy that punctuate long-scroll explainer pages. Primary actions use a near-black pill CTA; secondary actions sit in a white outlined button. Type runs Haas Grotesk in modest weights — never bold for its own sake.",
@@ -1230,55 +1181,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-2",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/airtable/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "apple-design-analysis",
@@ -1760,55 +1662,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-3",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/apple/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "binance-design-analysis",
@@ -2365,55 +2218,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-4",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/binance/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "bmw-design-analysis",
     "name": "BMW-design-analysis",
     "description": "BMW's corporate site — distinct from BMW M's motorsport-bombastic variant, this is a measured and settled corporate-automotive interface. On a light (cream-tinted white) canvas, BMW corporate blue (#1c69d4) carries every primary CTA; dark navy hero bands frame model photography. BMW Type Next Latin sets the entire hierarchy on two weights — heavy 700 display and Light 300 body. Configuration and reservation flows ride a card-based 4-up grid, where each card holds a model render, a name, and a \"Learn More\" link.",
@@ -2860,55 +2664,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-5",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/bmw/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "bmw-m-design-analysis",
     "name": "BMW-M-design-analysis",
     "description": "A motorsport-engineering interface anchored on a near-black canvas with white BMW Type Next Latin display headlines in confident UPPERCASE. The brand carries no decorative voltage — its energy comes from full-bleed automotive photography (cars on tracks, driver-cockpit shots, carbon-fiber detail) and the iconic M tricolor stripe (light blue → dark blue → red) used sparingly as a brand signature on logos, dividers, and motorsport chrome. Type stays light to medium weight to feel European-engineered, never American-bombastic.",
@@ -3313,55 +3068,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-6",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/bmw-m/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "bugatti-design-analysis",
     "name": "Bugatti-design-analysis",
     "description": "An austere luxury-automotive interface that uses near-pure black canvas, white uppercase letterspaced display, and full-bleed automotive photography as the only voltage. The system runs three custom Bugatti typefaces — Bugatti Display, Bugatti Text Regular, and Bugatti Monospace — and combines them at modest weights with wide tracking to feel European-engineered, hyper-minimal, and quietly expensive. There is no accent color, no decorative element, no chrome — only photography, typography, and the brand wordmark.",
@@ -3713,55 +3419,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-7",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/bugatti/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "cal-com-design-analysis",
@@ -4214,55 +3871,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-8",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/cal/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "claude-design-analysis",
@@ -4773,55 +4381,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-9",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/claude/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "clay-design-analysis",
     "name": "Clay-design-analysis",
     "description": "A vibrant claymation-meets-data interface for Clay.com (GTM data-orchestration platform). Anchors on white canvas with dark-navy primary CTAs, custom rounded display type, and saturated single-color feature cards — hot pink, deep teal, lavender, peach, ochre — that punctuate long-scroll explainer pages. Brand voltage comes from 3D-rendered claymation illustrations (mountains, characters, mascots) used as full-bleed hero artifacts and the bright multi-color card surfaces showing product UI fragments.",
@@ -5297,55 +4856,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-10",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/clay/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "clickhouse-design-analysis",
@@ -5829,55 +5339,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-11",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/clickhouse/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "cohere-design-analysis",
     "name": "Cohere-design-analysis",
     "description": "Cohere's 2026 web system is a controlled enterprise AI interface built from stark white editorial space, deep green-black product bands, soft mineral surfaces, rounded media cards, and a distinctive type split between monospaced-feeling display headlines and precise Unica77 UI text.",
@@ -6202,55 +5663,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-12",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/cohere/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "coinbase-design-analysis",
@@ -6761,55 +6173,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-13",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/coinbase/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "composio-design-analysis",
     "name": "Composio-design-analysis",
     "description": "A developer-tools brand for AI-agent tool integration whose marketing surfaces lean into a dark, technical aesthetic with a single deep-electric-blue voltage (`#0007cd`). The page floor is near-black (`#0f0f0f`); cards float above on subtle gray-tinted surfaces. abcDiatype carries display and body in a single sans family with weights 400-600. The brand's strongest visual signature is a four-pane terminal-style mockup (a 2×2 grid of dark code/output panels) with a central blue spotlight glow — used as the homepage hero anchor.",
@@ -7233,55 +6596,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-14",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/composio/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "coral-pop",
@@ -7804,55 +7118,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-15",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/cursor/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "dell-1996-inspired",
     "name": "Dell 1996 Inspired",
     "description": "An inspired interpretation of Dell.com's 1996 design language — a catalog-era enterprise web design built around a literal black page frame, vivid flat color-block \"ribbon cards\" tinted in sage, salmon, periwinkle, sky, peach and lime, chunky Helvetica-Black display titles, Times Roman body copy, and an entire visual vocabulary of pre-Photoshop hand-cut GIF stickers (NEW! bursts, award seals, beveled product photos).",
@@ -8338,58 +7603,9 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-16",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/dell-1996/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md",
-    "name": "Unknown",
-    "description": "",
+    "id": "elevenlabs",
+    "name": "Elevenlabs",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/elevenlabs/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -8430,56 +7646,7 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "YAML parse error: bad indentation of a mapping entry (3:485)\n\n 1 |  ... \n 2 |  ... \n 3 |  ... tion, captions. CTAs are subtle: a near-black ink pill is the p ...\n-----------------------------------------^\n 4 |  ... \n 5 |  ... ",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "readme-md-17",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/elevenlabs/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "YAML parse error: bad indentation of a mapping entry (3:485)\n\n 1 |  ... \n 2 |  ... \n 3 |  ... tion, captions. CTAs are subtle: a near-black ink pill is the p ...\n-----------------------------------------^\n 4 |  ... \n 5 |  ...  (ingested as best-effort neutral brand \"elevenlabs\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
@@ -8970,55 +8137,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-18",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/expo/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "ferrari-design-analysis",
     "name": "Ferrari-design-analysis",
     "description": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables). The single brand voltage is **Rosso Corsa** (`#da291c`) — the iconic Ferrari racing red — used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights. Type runs **FerrariSans** at modest weights (display 500, body 400) — never bombastic. Spacing follows an explicit 8px token ladder (`xxxs` 4px through `super` 128px); generous editorial pacing throughout. The brand's strongest visual signature is the **full-bleed cinematic hero photograph** that fills the viewport top with car photography, model details, or trackside livery — followed by a tighter editorial body layout below.",
@@ -9455,55 +8573,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-19",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/ferrari/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "figma-design-analysis",
     "name": "Figma-design-analysis",
     "description": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure black ink, pill-shaped CTAs — while each story section drops the page into a saturated lime, lavender, cream, mint, or pink panel that reads like a sticky note placed on a clean desk. The result is a design system that feels both technical and joyful — a tool for serious work, made by people who like color.",
@@ -9922,55 +8991,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-20",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/figma/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "framer-design-analysis",
     "name": "Framer-design-analysis",
     "description": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident blue (#0099ff) reserved for hyperlinks and selection states. The page rhythm is broken by oversized vibrant gradient atmosphere panels — magenta, violet, orange spotlights — that act as living showcase tiles, not decoration. Every CTA is a white pill on dark; every card is a translucent or charcoal surface; every section title pulls letter-spacing tight enough to feel like a poster.",
@@ -10366,55 +9386,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-21",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/framer/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "hashicorp-design-analysis",
@@ -10835,55 +9806,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-22",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/hashicorp/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "heritage",
@@ -11523,55 +10445,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-23",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/hp/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "ibm-design-analysis",
     "name": "IBM-design-analysis",
     "description": "An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px. Type runs IBM Plex Sans at light weight 300 for display sizes (a brand signature) and 400/600 for body and emphasis. Cards live as thin-bordered tiles with no shadow; sections separate via subtle gray rows. The chrome is square, the typography is light, and the only color in the system is one assertive blue — the result reads as old-world enterprise gravitas reframed for the cloud era.",
@@ -11996,55 +10869,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-24",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/ibm/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "intercom-design-analysis",
     "name": "Intercom-design-analysis",
     "description": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand. Cards live as floating white tiles with thin hairline borders and minimal radii (8–16px). Display headlines run Saans at weight 500 with measured negative tracking. The system reads as a careful, product-led publication: product screenshots dominate, ornament is rare, and the only place chromatic energy enters is the Fin Orange CTA.",
@@ -12456,58 +11280,9 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-25",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/intercom/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-2",
-    "name": "Unknown",
-    "description": "",
+    "id": "kraken",
+    "name": "Kraken",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/kraken/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -12548,64 +11323,15 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"kraken\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
   },
   {
-    "id": "readme-md-26",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/kraken/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-3",
-    "name": "Unknown",
-    "description": "",
+    "id": "lamborghini",
+    "name": "Lamborghini",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/lamborghini/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -12646,56 +11372,7 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "readme-md-27",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/lamborghini/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"lamborghini\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
@@ -13219,58 +11896,9 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-28",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/linear.app/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-4",
-    "name": "Unknown",
-    "description": "",
+    "id": "lovable",
+    "name": "Lovable",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/lovable/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -13311,64 +11939,15 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"lovable\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
   },
   {
-    "id": "readme-md-29",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/lovable/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-5",
-    "name": "Unknown",
-    "description": "",
+    "id": "mastercard",
+    "name": "Mastercard",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/mastercard/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -13409,56 +11988,7 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "readme-md-30",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/mastercard/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"mastercard\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
@@ -14027,55 +12557,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-31",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/meta/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "minimax-design-analysis",
@@ -14693,55 +13174,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-32",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/minimax/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "mintlify-design-analysis",
@@ -15489,55 +13921,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-33",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/mintlify/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "miro-design-analysis",
     "name": "Miro-design-analysis",
     "description": "Miro presents itself as the AI-powered visual workspace through a confident, almost playful brand voice — anchored by its signature canary yellow ({colors.brand-yellow}) wordmark over white canvas, broken open by colorful pastel feature tints (rose, teal, coral, orange, mint) that echo the actual sticky-note color palette used on the live whiteboard. Black-pill primary buttons dominate marketing, real Miro-board mockups serve as feature illustrations, and a 4-tier pricing grid leads into a dense comparison table. Roobert PRO carries display headlines; the system supports homepage, pricing, AI Workflows product page, agile vertical, and customer stories surfaces.",
@@ -16246,55 +14629,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-34",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/miro/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "mistral-ai-design-analysis",
     "name": "Mistral-AI-design-analysis",
     "description": "Mistral AI brands itself with a singular signature — atmospheric sunset gradients (mustard, orange, deep red) layered over photography of mountains, plus a horizontal \"sunset stripe\" bar that closes every page. The system pairs warm cream-yellow surfaces ({colors.cream}) with a saturated orange primary CTA ({colors.primary}) and uses an elegant near-serif voice for hero displays. Coverage spans homepage (Frontier AI hero), Le Studio product page, Coding solutions, news article surfaces, contact form, and services tier page — all anchored by the signature gradient closing band.",
@@ -16953,55 +15287,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-35",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/mistral.ai/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "mongodb-design-analysis",
@@ -17666,55 +15951,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-36",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/mongodb/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "mono-devtools",
     "name": "Mono Devtools",
     "description": "Developer tools — near-black, lime accent, sharp radii, custom extension keys.",
@@ -18201,55 +16437,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-37",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/nike/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "nimbus",
@@ -18823,55 +17010,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-38",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/nintendo-2001/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "notion-design-analysis",
@@ -19588,55 +17726,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-39",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/notion/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "nvidia-design-analysis",
     "name": "NVIDIA-design-analysis",
     "description": "An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA, every active tab, and the small decorative corner squares that mark out cards. The system is unapologetically angular: 2px radius across every surface, tight bold sans-serif typography in NVIDIA's proprietary EMEA cut, and a hairline gray rule that separates dense multi-column technical content. There is no decorative gradient, no atmospheric mesh, no soft drop shadow — just black, white, gray, and green stacked into a structured editorial grid that scales from product cards to massive industry landing pages without bending its rules.\n",
@@ -20146,55 +18235,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-40",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/nvidia/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "ollama-design-analysis",
     "name": "Ollama-design-analysis",
     "description": "An almost defiantly minimal documentation-first system that treats the home page like a Markdown README — paper-white canvas, 36px center-aligned heading, a single black pill CTA, an inline terminal install snippet, and a hand-drawn llama mascot as the only ornamental element. No gradient, no hero photography, no marketing pyrotechnics. The chrome is a tiny utility palette of pure black, pure white, and three neutral grays; every interactive element is fully rounded into a pill (`{rounded.full}`); typography is SF Pro Rounded for headings paired with system sans for body and ui-monospace for code. Pricing tiers, FAQs, and \"your data stays yours\" guarantees all sit on the same flat canvas inside thin-border cards — the system is the documentation, and the documentation is the system.\n",
@@ -20596,55 +18636,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-41",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/ollama/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "opencode-design-analysis",
     "name": "OpenCode-design-analysis",
     "description": "A terminal-native marketing system rendered entirely in Berkeley Mono — every word on the page, from the hero headline down to the footer fine print, is monospaced. The page itself reads like a manpage or a static-site README: warm cream canvas (`#fdfcfc`), nearly-black ink (`#201d1d`), 4px-radius rectangles for the few interactive elements, and bracketed `[+]`/`[-]` ASCII markers used as bullets. The brand's only \"visual moment\" is a single dark hero card that mocks up the OpenCode TUI itself — black background, monospaced terminal output, ASCII pipe characters, and a wordmark rendered as block-pixel ASCII. Every section sits as a hairline-bordered text block on the cream canvas with no shadows, no gradients, no decorative imagery, and no non-monospaced character anywhere in the system.\n",
@@ -20987,55 +18978,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-42",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/opencode.ai/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "pinterest-design-analysis",
@@ -21496,55 +19438,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-43",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/pinterest/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "playstation-design-analysis",
@@ -22051,55 +19944,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-44",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/playstation/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "posthog-design-analysis",
@@ -22690,58 +20534,9 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-45",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/posthog/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-6",
-    "name": "Unknown",
-    "description": "",
+    "id": "raycast",
+    "name": "Raycast",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/raycast/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -22782,56 +20577,7 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "YAML parse error: bad indentation of a mapping entry (3:384)\n\n 1 |  ... \n 2 |  ... \n 3 |  ... I scaled up to a marketing page: monochrome dark surfaces with  ...\n-----------------------------------------^\n 4 |  ... \n 5 |  ... reen / blue) reserved for extension and feature illustrations.  ...",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "readme-md-46",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/raycast/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "YAML parse error: bad indentation of a mapping entry (3:384)\n\n 1 |  ... \n 2 |  ... \n 3 |  ... I scaled up to a marketing page: monochrome dark surfaces with  ...\n-----------------------------------------^\n 4 |  ... \n 5 |  ... reen / blue) reserved for extension and feature illustrations.  ... (ingested as best-effort neutral brand \"raycast\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
@@ -23258,55 +21004,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-47",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/renault/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "replicate-design-analysis",
@@ -23779,55 +21476,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-48",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/replicate/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "resend-design-analysis",
     "name": "Resend-design-analysis",
     "description": "Resend's marketing surfaces sit on a near-pure black canvas with off-white\ntext and a single signature color — the deep editorial-serif Domaine\nDisplay headline mark — that gives an otherwise utilitarian developer-tool\nbrand its print-magazine confidence. The system pairs Domaine Display\n(oversized 76px–96px serif, ss01/ss04/ss11 features on) with ABC Favorit\nfor body and Inter for UI. Surfaces rely on subtle 6–9% opacity gradient\nglows, hairline 1px borders made from translucent white, and a strict\nrounded-12px container vocabulary. There is no decorative chrome — just\ntype, code, and atmospheric depth.\n",
@@ -24236,55 +21884,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-49",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/resend/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "revolut-design-analysis",
@@ -24758,58 +22357,9 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-50",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/revolut/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-7",
-    "name": "Unknown",
-    "description": "",
+    "id": "runwayml",
+    "name": "Runwayml",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/runwayml/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -24850,64 +22400,15 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"runwayml\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
   },
   {
-    "id": "readme-md-51",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/runwayml/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-8",
-    "name": "Unknown",
-    "description": "",
+    "id": "sanity",
+    "name": "Sanity",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/sanity/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -24948,56 +22449,7 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "readme-md-52",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/sanity/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"sanity\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
@@ -25482,55 +22934,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-53",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/sentry/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "shopifi-inspired-design-analysis",
     "name": "Shopifi-Inspired-design-analysis",
     "description": "An inspired interpretation of Shopifi's design language — a cinematic commerce platform that runs two parallel design tracks. The marketing-hero and product-narrative pages live on near-black canvases with full-bleed photography of merchants, giant Neue Haas Grotesk display type at thin weights, and a single black-pill CTA stroked in white. The transactional pages (pricing, signup, dashboards) flip to a cream-mint canvas with pastel aloe and pistachio greens, the same pill button vocabulary, and Inter for UI body. The two tracks share typographic DNA but diverge sharply in canvas polarity — and that choice is the brand.",
@@ -25984,55 +23387,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-54",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/shopify/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "slacc-inspired-design-analysis",
@@ -26714,58 +24068,9 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-55",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/spacex/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-9",
-    "name": "Unknown",
-    "description": "",
+    "id": "spotify",
+    "name": "Spotify",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/spotify/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -26806,64 +24111,15 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"spotify\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
   },
   {
-    "id": "readme-md-56",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/spotify/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-10",
-    "name": "Unknown",
-    "description": "",
+    "id": "starbucks",
+    "name": "Starbucks",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/starbucks/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -26904,56 +24160,7 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "readme-md-57",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/starbucks/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"starbucks\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
@@ -27460,58 +24667,9 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-58",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/stripe/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-11",
-    "name": "Unknown",
-    "description": "",
+    "id": "supabase",
+    "name": "Supabase",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/supabase/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -27552,56 +24710,7 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "YAML parse error: bad indentation of a mapping entry (3:323)\n\n 1 |  ... \n 2 |  ... \n 3 |  ... rand reads as quietly technical: minimal chrome, a near-monochr ...\n-----------------------------------------^\n 4 |  ... \n 5 |  ... ",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "readme-md-59",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/supabase/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "YAML parse error: bad indentation of a mapping entry (3:323)\n\n 1 |  ... \n 2 |  ... \n 3 |  ... rand reads as quietly technical: minimal chrome, a near-monochr ...\n-----------------------------------------^\n 4 |  ... \n 5 |  ...  (ingested as best-effort neutral brand \"supabase\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
@@ -27994,58 +25103,9 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-60",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/superhuman/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-12",
-    "name": "Unknown",
-    "description": "",
+    "id": "tesla",
+    "name": "Tesla",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/tesla/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -28086,64 +25146,15 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"tesla\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
   },
   {
-    "id": "readme-md-61",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/tesla/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "design-md-13",
-    "name": "Unknown",
-    "description": "",
+    "id": "theverge",
+    "name": "Theverge",
+    "description": "Ingested best-effort from a non-front-matter brand document.",
     "source": "/home/ubuntu/projects/awesome-design-forge/design-md/theverge/DESIGN.md",
     "colors": {
       "background": "#ffffff",
@@ -28184,56 +25195,7 @@ export const INGESTED_SPECS: DesignSpec[] = [
     },
     "components": {},
     "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
-    "id": "readme-md-62",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/theverge/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
+      "no YAML front matter found (ingested as best-effort neutral brand \"theverge\")",
       "colors: no primary/tertiary/accent declared; using default blue",
       "typography: no heading/body token found; using Inter defaults"
     ]
@@ -28816,55 +25778,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-63",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/together.ai/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "uber-inspired-design-analysis",
     "name": "Uber-Inspired-design-analysis",
     "description": "An inspired interpretation of Uber's design language — a transportation-and-delivery super-app brand whose web surface is a black-and-white duet, framed by a custom geometric display sans, accented by a single signature pill shape (radius 999px) on every interactive element, and decorated only by editorial 4:3 illustrations of riders, drivers, and city objects.",
@@ -29427,55 +26340,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-64",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/uber/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "vercel-inspired-design-analysis",
@@ -30119,55 +26983,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-65",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/vercel/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "verdant-health",
     "name": "Verdant Health",
     "description": "Eco / health — off-white + forest green, rounded, full token set with all on-* keys.",
@@ -30795,55 +27610,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-66",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/vodafone/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "voltagent-inspired-design-analysis",
     "name": "Voltagent-Inspired-design-analysis",
     "description": "An inspired interpretation of Voltagent's design language — a developer-focused AI agent engineering platform whose surface is an unrelenting near-black canvas broken only by a single electric-green brand accent, code-editor mockups inside the hero, and a precise grid of dark feature cards that read like a documentation site dressed as marketing.",
@@ -31341,55 +28107,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-67",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/voltagent/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "warp-inspired-design-analysis",
     "name": "Warp-Inspired-design-analysis",
     "description": "An inspired interpretation of Warp's design language — an agentic terminal-and-development-environment brand whose surface is a warm near-charcoal canvas (a tint warmer than pure black), broken only by clean Inter typography, the occasional Instrument Serif italic moment, and dense terminal-mockup imagery; CTAs are unusually understated, with shape geometry running tighter than most marketing sites.",
@@ -31865,55 +28582,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-68",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/warp/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "webflow-inspired-design-analysis",
@@ -32462,55 +29130,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-69",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/webflow/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "wired-inspired-design-analysis",
     "name": "Wired-Inspired-design-analysis",
     "description": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
@@ -32978,55 +29597,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-70",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/wired/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "wise-inspired-design-analysis",
@@ -33510,55 +30080,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
     "warnings": []
   },
   {
-    "id": "readme-md-71",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/wise/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
-  },
-  {
     "id": "xai-inspired-design-analysis",
     "name": "xAI-Inspired-design-analysis",
     "description": "An inspired interpretation of xAI's design language — Elon Musk's frontier-AI company whose web surface is a strict near-black canvas broken only by white pill outlines, occasional warm sunset / dusk gradient accents, a custom geometric sans (Universal Sans) for display, and an uppercase tracked monospace caption face; the whole system reads as engineered-cosmic, unmarketed.",
@@ -33964,55 +30485,6 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-72",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/x.ai/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   },
   {
     "id": "zapier-inspired-design-analysis",
@@ -34512,54 +30984,5 @@ export const INGESTED_SPECS: DesignSpec[] = [
       }
     },
     "warnings": []
-  },
-  {
-    "id": "readme-md-73",
-    "name": "Unknown",
-    "description": "",
-    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/zapier/README.md",
-    "colors": {
-      "background": "#ffffff",
-      "foreground": "#0a0a0a",
-      "primary": "#2563eb",
-      "secondary": "#92b1f5",
-      "accent": "#2563eb",
-      "muted": "#f0f0f0",
-      "destructive": "#ef4444",
-      "border": "#e2e2e2",
-      "extra": {}
-    },
-    "typography": {
-      "heading": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "body": {
-        "fontFamily": "Inter",
-        "fontStack": [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif"
-        ],
-        "fontSizePx": 16
-      },
-      "baseSizePx": 16
-    },
-    "elevation": {
-      "radius": "0.5rem"
-    },
-    "components": {},
-    "warnings": [
-      "no YAML front matter found; produced minimal spec",
-      "colors: no primary/tertiary/accent declared; using default blue",
-      "typography: no heading/body token found; using Inter defaults"
-    ]
   }
 ];

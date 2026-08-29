@@ -63,6 +63,70 @@ function toRem(v: string | number | undefined, fallback = "0.5rem"): string {
   return `${n / 16}rem`; // unitless treated as px
 }
 
+/**
+ * Classify a raw `.md` file as a real brand spec.
+ *
+ * A genuine DESIGN.md spec is either:
+ *   - front matter declaring at least `name`/`colors`/`typography`, OR
+ *   - a prose "design system / brand analysis" doc whose first heading looks
+ *     brand-related (these are ingested best-effort — see `fallbackSpec`).
+ *
+ * Placeholder README/prose docs (e.g. "Design system details have been moved
+ * to … getdesign.md") are explicitly excluded: they have no usable brand
+ * identity and must not bake into phantom `Unknown`/`readme-md` brands in the
+ * showroom + export.
+ */
+const PLACEHOLDER_RE = /design system details have been moved|getdesign\.md/i;
+const BRAND_HEADING_RE = /#\s*(.*\b(design system|design language|design tokens|brand|design guide)\b.*)/i;
+export function isBrandSpec(content: string): boolean {
+  if (PLACEHOLDER_RE.test(content)) return false;
+  const fm = content.match(FRONTMATTER_RE);
+  if (fm) {
+    try {
+      const doc = (yaml.load(fm[1]) as Record<string, unknown>) ?? {};
+      if (doc.name || doc.colors || doc.typography) return true;
+    } catch {
+      /* YAML error -> fall through to prose check */
+    }
+  }
+  return BRAND_HEADING_RE.test(content);
+}
+
+/** Derive a stable brand id + human name from a spec's file path. */
+function brandIdentityFromPath(filePath: string): { id: string; name: string } {
+  const base = filePath.split(/[\\/]/).pop() ?? "brand";
+  const folder = filePath.split(/[\\/]/);
+  // parent folder name (e.g. design-md/kraken/DESIGN.md -> "kraken")
+  const parent = folder[folder.length - 2] ?? base.replace(/\.md$/i, "");
+  const id = slugify(parent) || "brand";
+  const name = parent
+    .replace(/[-_]+/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+  return { id, name };
+}
+
+/**
+ * Best-effort spec for files that are real brands but lack machine-readable
+ * front matter (prose analyses, or specs with YAML errors). Falls back to a
+ * neutral, valid theme and records a documented, non-fatal warning so the
+ * ingest run still completes for every brand.
+ */
+function fallbackSpec(filePath: string, reason: string, warnings: string[]): DesignSpec {
+  const { id, name } = brandIdentityFromPath(filePath);
+  warnings.push(`${reason} (ingested as best-effort neutral brand "${id}")`);
+  return {
+    id,
+    name,
+    description: "Ingested best-effort from a non-front-matter brand document.",
+    source: path.resolve(filePath),
+    colors: mapColors({}, warnings),
+    typography: mapTypography(undefined, warnings),
+    elevation: { radius: "0.5rem" },
+    components: {},
+    warnings,
+  };
+}
+
 /** Resolve `{a.b.c}` references against the parsed token tree. */
 function resolveRef(raw: string, root: unknown): string {
   let out = raw;
@@ -339,22 +403,19 @@ export async function parseDesignMd(filePath: string): Promise<DesignSpec> {
   try {
     raw = await fs.promises.readFile(source, "utf8");
   } catch (e) {
-    warnings.push(`read error: ${(e as Error).message}`);
-    return emptySpec(source, warnings);
+    return fallbackSpec(filePath, `read error: ${(e as Error).message}`, warnings);
   }
 
   const fm = raw.match(FRONTMATTER_RE);
   if (!fm) {
-    warnings.push("no YAML front matter found; produced minimal spec");
-    return emptySpec(source, warnings);
+    return fallbackSpec(filePath, "no YAML front matter found", warnings);
   }
 
   let doc: Record<string, unknown>;
   try {
     doc = (yaml.load(fm[1]) as Record<string, unknown>) ?? {};
   } catch (e) {
-    warnings.push(`YAML parse error: ${(e as Error).message}`);
-    return emptySpec(source, warnings);
+    return fallbackSpec(filePath, `YAML parse error: ${(e as Error).message}`, warnings);
   }
 
   const body = raw.slice(fm[0].length);
@@ -393,21 +454,6 @@ export async function parseDesignMd(filePath: string): Promise<DesignSpec> {
     typography,
     elevation,
     components,
-    warnings,
-  };
-}
-
-/** Minimal valid spec used when a file cannot be parsed at all. */
-function emptySpec(source: string, warnings: string[]): DesignSpec {
-  return {
-    id: slugify(source.split(/[\\/]/).pop() ?? "brand"),
-    name: "Unknown",
-    description: "",
-    source,
-    colors: mapColors({}, warnings),
-    typography: mapTypography(undefined, warnings),
-    elevation: { radius: "0.5rem" },
-    components: {},
     warnings,
   };
 }
