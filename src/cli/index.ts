@@ -13,6 +13,7 @@ import {
 import { parseDesignMd, discoverBrandFiles } from "../parser/design-parser.ts";
 import { specToBrandTokens } from "../generators/adapter.ts";
 import { formatValidationReport, assertValidDesignSpec, SpecValidationError } from "../parser/validate.ts";
+import { checkPublishReadiness, formatReadiness } from "../package/ready.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 /** Resolve a brand by id from the merged built-in + ingested set. */
@@ -58,7 +59,19 @@ function cmdList() {
   for (const w of warnings) ok(`  ! ${w}`);
 }
 
-// ---- validate ----
+// ---- ready (publish readiness) ----
+function cmdReady(opts: { target?: string; strict?: boolean }) {
+  const dir = opts.target ? path.resolve(opts.target) : path.join(__dirname, "..", "..");
+  const findings = checkPublishReadiness(dir, {
+    requireLicense: true,
+    requireRepository: true,
+  });
+  const okAll = findings.every((f) => f.ok);
+  ok(formatReadiness({ ok: okAll, findings }));
+  if (!okAll) process.exit(2);
+}
+
+
 async function cmdValidate(arg: string, opts: { strict?: boolean }) {
   const files = arg.endsWith(".md") && fs.existsSync(arg) && fs.statSync(arg).isFile()
     ? [arg]
@@ -387,6 +400,17 @@ program
   .description("Launch the local showroom")
   .action((id?: string) => {
     Promise.resolve(cmdPreview(id)).catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
+  });
+
+program
+  .command("ready")
+  .description("Check publish/packaging readiness (version, license, repository, scripts)")
+  .option("--target <dir>", "directory to check (default: this repo)")
+  .action((opts: { target?: string }) => {
+    Promise.resolve(cmdReady(opts)).catch((e) => {
       console.error(e);
       process.exit(1);
     });
