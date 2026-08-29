@@ -1,0 +1,48 @@
+{
+  "name": "awesome-design-forge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Design-spec parser + theme generator: turn brand tokens into shadcn/Tailwind themes, brand-themed React primitives, a live preview showroom, and a CLI.",
+  "bin": {
+    "design-forge": "./src/cli/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "gen:theme": "tsx src/cli/index.ts export aurora --target /tmp/df-demo --framework vite",
+    "preview": "tsx src/cli/index.ts preview",
+    "build:preview": "vite build",
+    "test:visual": "playwright test",
+    "gen:brands": "tsx scripts/gen-brands.ts",
+    "ingest": "tsx src/cli/index.ts ingest",
+    "link": "pnpm link --global"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.4",
+    "@radix-ui/react-navigation-menu": "^1.2.3",
+    "@radix-ui/react-slot": "^1.1.1",
+    "clsx": "^2.1.1",
+    "commander": "^12.1.0",
+    "js-yaml": "^5.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "lightningcss": "^1.28.2",
+    "tailwindcss": "^4.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
+  }
+}

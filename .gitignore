@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dist-preview/
+e2e/__screenshots__/*.png
+test-results/
+*.log
+.DS_Store
+
