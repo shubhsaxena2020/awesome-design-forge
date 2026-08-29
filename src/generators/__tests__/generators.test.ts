@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import * as path from "node:path";
+import { execFileSync } from "node:child_process";
 import { BRANDS, getBrand } from "../../brands/tokens.ts";
 import { loadAllBrands } from "../../brands/tokens.ts";
 import { ingestDir } from "../../brands/ingest.ts";
@@ -174,5 +175,24 @@ describe("req B (new) — DESIGN.md ingester", () => {
     expect(res.warnings.length).toBeGreaterThan(0); // but warnings are recorded
     expect(res.files).toBe(2);
   });
+});
+
+describe("req 13 — CLI ingest guards a missing directory", () => {
+  it("exits non-zero with a clear message when the dir does not exist", () => {
+    const cli = path.resolve(__dirname, "../../cli/index.ts");
+    let code = 0;
+    let out = "";
+    try {
+      out = execFileSync("npx", ["tsx", cli, "ingest", "/path/does/not/exist"], {
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "pipe"],
+      });
+    } catch (e: any) {
+      code = e.status ?? 1;
+      out = (e.stderr ?? "") + (e.stdout ?? "");
+    }
+    expect(code).not.toBe(0);
+    expect(out).toContain("Spec directory not found");
+  }, 30000);
 });
 
