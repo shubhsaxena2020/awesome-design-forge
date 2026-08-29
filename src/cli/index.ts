@@ -13,8 +13,10 @@ import {
 import { parseDesignMd, discoverBrandFiles } from "../parser/design-parser.ts";
 import { specToBrandTokens } from "../generators/adapter.ts";
 import { formatValidationReport, assertValidDesignSpec, SpecValidationError } from "../parser/validate.ts";
+import type { DesignSpec } from "../spec/types.ts";
 import { checkPublishReadiness, formatReadiness } from "../package/ready.ts";
 import { diffTokens, formatDiff, summarizeDiff } from "../transformers/token-diff.ts";
+import { materialToDesignSpec, flatToDesignSpec } from "../adapters/material-shim.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 /** Resolve a brand by id from the merged built-in + ingested set. */
@@ -46,6 +48,31 @@ function ok(s: string) {
   process.stdout.write(s + "\n");
 }
 
+/** Render a DesignSpec back to a DESIGN.md front-matter document. */
+function specToMarkdown(spec: DesignSpec): string {
+  const lines: string[] = ["---"];
+  lines.push(`name: ${spec.name}`);
+  lines.push(`id: ${spec.id}`);
+  if (spec.description) lines.push(`description: ${spec.description}`);
+  lines.push("colors:");
+  for (const [k, v] of Object.entries(spec.colors)) {
+    if (k === "extra") continue;
+    lines.push(`  ${k}: ${v}`);
+  }
+  lines.push("typography:");
+  lines.push(`  heading:`);
+  lines.push(`    fontFamily: ${spec.typography.heading.fontFamily}`);
+  lines.push(`    fontSize: ${spec.typography.heading.fontSizePx}`);
+  lines.push(`  body:`);
+  lines.push(`    fontFamily: ${spec.typography.body.fontFamily}`);
+  lines.push(`    fontSize: ${spec.typography.body.fontSizePx}`);
+  lines.push(`rounded:`);
+  lines.push(`  base: ${spec.elevation?.radius ?? "0.5rem"}`);
+  lines.push("---");
+  lines.push("");
+  return lines.join("\n");
+}
+
 // ---- list ----
 function cmdList() {
   const { brands, ingested, warnings } = loadAllBrands();
@@ -69,6 +96,26 @@ async function cmdDiff(a: string, b: string) {
   ok(`Token diff: ${ba.id} -> ${bb.id}`);
   ok(`  ${summary.added} added, ${summary.removed} removed, ${summary.changed} changed, ${summary.unchanged} unchanged\n`);
   ok(formatDiff(changes, { onlyChanged: true }));
+}
+
+// ---- adapter (import an upstream variant -> canonical DESIGN.md) ----
+function cmdAdapter(kind: string, input: string, opts: { out?: string }) {
+  const data = JSON.parse(fs.readFileSync(input, "utf8"));
+  let spec: DesignSpec;
+  if (kind === "material") spec = materialToDesignSpec(data);
+  else if (kind === "flat") spec = flatToDesignSpec(data.id, data.hex ?? []);
+  else {
+    console.error(`Unknown adapter "${kind}". Supported: material, flat`);
+    process.exit(2);
+    return;
+  }
+  const md = specToMarkdown(spec);
+  if (opts.out) {
+    fs.writeFileSync(opts.out, md);
+    ok(`Wrote ${kind} adapter output -> ${opts.out} (validate with: design-forge validate ${opts.out})`);
+  } else {
+    process.stdout.write(md + "\n");
+  }
 }
 
 
@@ -426,6 +473,21 @@ program
       console.error(e);
       process.exit(1);
     });
+  });
+
+program
+  .command("adapter")
+  .argument("<kind>", "upstream variant: material | flat")
+  .argument("<input>", "path to upstream JSON tokens")
+  .option("--out <file>", "write the converted DESIGN.md to this path (default: stdout)")
+  .description("Import an upstream design-system variant -> canonical DESIGN.md (roadmap #5)")
+  .action((kind: string, input: string, opts: { out?: string }) => {
+    try {
+      cmdAdapter(kind, input, opts);
+    } catch (e) {
+      console.error(e);
+      process.exit(1);
+    }
   });
 
 program

@@ -237,7 +237,9 @@ function mapColors(resolved: Record<string, string>, warnings: string[]): ColorP
   for (const [k, v] of Object.entries(resolved)) {
     if (!["background", "surface", "canvas", "neutral", "foreground", "text",
       "primary", "secondary", "accent", "muted", "destructive", "border",
-      "tertiary", "action", "error", "danger", "divider"].includes(k)) {
+      "tertiary", "action", "error", "danger", "divider",
+      "on-primary", "on-secondary", "on-accent", "on-muted", "on-destructive", "on-error",
+      "onPrimary", "onSecondary", "onAccent", "onMuted", "onDestructive"].includes(k)) {
       extra[k] = v;
     }
   }
@@ -255,11 +257,11 @@ function mapColors(resolved: Record<string, string>, warnings: string[]): ColorP
     muted,
     destructive,
     border,
-    onPrimary: resolved["on-primary"] || resolved["on-tertiary"],
-    onSecondary: resolved["on-secondary"],
-    onAccent: resolved["on-accent"],
-    onMuted: resolved["on-muted"],
-    onDestructive: resolved["on-error"] || resolved["on-destructive"],
+    onPrimary: resolved["on-primary"] || resolved["on-tertiary"] || resolved["onPrimary"],
+    onSecondary: resolved["on-secondary"] || resolved["onSecondary"],
+    onAccent: resolved["on-accent"] || resolved["onAccent"],
+    onMuted: resolved["on-muted"] || resolved["onMuted"],
+    onDestructive: resolved["on-error"] || resolved["on-destructive"] || resolved["onDestructive"],
     extra,
   };
 }
