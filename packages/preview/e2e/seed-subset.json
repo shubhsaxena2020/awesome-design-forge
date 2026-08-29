@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-08-29T21:17:55.001Z",
+  "count": 5,
+  "seeds": [
+    {
+      "id": "seed-sparse",
+      "name": "Seed Sparse",
+      "traits": [
+        "light",
+        "high-contrast",
+        "sparse"
+      ]
+    },
+    {
+      "id": "notion-design-analysis",
+      "name": "Notion-design-analysis",
+      "traits": [
+        "light",
+        "high-contrast",
+        "dense"
+      ]
+    },
+    {
+      "id": "seed-noisy",
+      "name": "Seed Noisy",
+      "traits": [
+        "dark",
+        "high-contrast",
+        "dense"
+      ]
+    },
+    {
+      "id": "hashicorp-design-analysis",
+      "name": "HashiCorp-design-analysis",
+      "traits": [
+        "dark",
+        "high-contrast",
+        "dense"
+      ]
+    },
+    {
+      "id": "nimbus",
+      "name": "Nimbus",
+      "traits": [
+        "light",
+        "low-contrast",
+        "sparse"
+      ]
+    }
+  ]
+}

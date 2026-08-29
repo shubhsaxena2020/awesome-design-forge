@@ -60,7 +60,9 @@ shape so they ingest cleanly (no phantom brands).
 ## Human-gated operations
 
 Some operations require human authorization and must **not** be run by automation:
-- `pnpm link --global` (issue #3) — needs a human to authorize.
+- `pnpm link --global` (issue #3) — needs a human to authorize. See
+  **[docs/OPERATOR-pnpm-link.md](docs/OPERATOR-pnpm-link.md)** for the exact,
+  ready-to-run command and verification steps.
 - Any network/root action to enable the visual-regression browser on this VPS.
 
 When you hit one, stop and surface it rather than executing it.
