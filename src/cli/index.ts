@@ -3,7 +3,7 @@ import { Command } from "commander";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
-import { getBrand, loadAllBrands, type BrandTokens } from "../brands/tokens.ts";
+import { getBrand, loadAllBrands, loadAllSpecs, type BrandTokens } from "../brands/tokens.ts";
 import { ingestAndWrite } from "../brands/ingest.ts";
 import { emitThemeCss, emitTailwindTheme } from "../generators/css-variables.ts";
 import {
@@ -86,6 +86,16 @@ function ansi256(hex: string): number {
 // ---- export ----
 async function cmdExport(id: string, opts: { target: string; framework: "nextjs" | "vite"; force?: boolean }) {
   const b = await resolveBrandOrFile(id);
+  // Per-spec synthesis: prefer the full DesignSpec (from a .md path, or the
+  // baked spec registry for ingested brands) so components reflect the brand's
+  // real typography/elevation/palette rather than just the theme CSS vars.
+  let spec: import("../spec/types.ts").DesignSpec | undefined;
+  if (id.endsWith(".md") && fs.existsSync(id) && fs.statSync(id).isFile()) {
+    spec = await parseDesignMd(id);
+  } else {
+    const { specs } = loadAllSpecs();
+    spec = specs.find((s) => s.id === b.id);
+  }
   const target = path.resolve(opts.target);
   // Guardrail: never clobber an existing, non-empty target without --force.
   if (!opts.force && fs.existsSync(target) && fs.readdirSync(target).length > 0) {
@@ -109,7 +119,7 @@ async function cmdExport(id: string, opts: { target: string; framework: "nextjs"
   // monorepo). Once exported into components/ui/, the helper lives alongside as
   // ./cn, so rewrite the relative import before writing.
   for (const p of PRIMITIVES) {
-    const src = generateComponent(p).replace(/from "(\.\.\/lib\/cn)"/g, 'from "./cn"');
+    const src = generateComponent(p, spec).replace(/from "(\.\.\/lib\/cn)"/g, 'from "./cn"');
     fs.writeFileSync(path.join(componentsDir, `${p}.tsx`), src);
   }
   // shared cn helper
