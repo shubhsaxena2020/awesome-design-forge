@@ -325,7 +325,7 @@ program
   .command("ingest")
   .argument("<dir>", "directory of DESIGN.md specs (recursive)")
   .description("Ingest DESIGN.md brand specs into the brand registry and report")
-  .action((dir: string) => {
+  .action(async (dir: string) => {
     const abs = path.resolve(dir);
     if (!fs.existsSync(abs) || !fs.statSync(abs).isDirectory()) {
       console.error(`! Spec directory not found: ${abs}`);
@@ -333,7 +333,7 @@ program
       process.exit(1);
     }
     const outFile = path.join(__dirname, "..", "brands", "ingested.ts");
-    const { brands, files, warnings } = ingestAndWrite(abs, outFile);
+    const { brands, files, warnings } = await ingestAndWrite(abs, outFile);
     ok(`Scanned ${files} .md files in ${abs}`);
     ok(`Parsed ${brands.length} brand(s); baked -> ${outFile}`);
     for (const b of brands) {

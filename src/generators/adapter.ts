@@ -9,12 +9,10 @@
 
 import type { BrandTokens } from "../brands/tokens.ts";
 import type { DesignSpec } from "../spec/types.ts";
-import { bestOnSurface } from "../transformers/color-engine.ts";
 
 /** Convert a parsed DesignSpec into a BrandTokens equivalent. */
 export function specToBrandTokens(spec: DesignSpec): BrandTokens {
   const c = spec.colors;
-  const fgOnPrimary = c.onPrimary ?? bestOnSurface(c.primary);
   const lc = (s: string) => (s.startsWith("#") ? s.toLowerCase() : s);
   return {
     id: spec.id,
@@ -36,7 +34,5 @@ export function specToBrandTokens(spec: DesignSpec): BrandTokens {
       body: spec.typography.body.fontFamily,
       baseSize: spec.typography.baseSizePx,
     },
-    // carry the contrast-inferred foregrounds for shadcn emitters if needed
-    ...({ onPrimary: fgOnPrimary } as object),
   } as BrandTokens;
 }
