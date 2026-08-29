@@ -1,6 +1,29 @@
 # Changelog
 
-## [1.7.0] - 2026-08-29 (design-forge)
+## [1.8.0] - 2026-08-29 (design-forge)
+
+### Tests / robustness (Backlog Phase B)
+- **`src/adapters/__tests__/adapters-negative.test.ts`** (B5): brand adapters/shims
+  stay safe under hostile/empty input, their output always passes the strict
+  validator, and `getBrand(<unknown>)` throws a clear `Unknown brand` error that
+  lists known brands.
+- **`src/parser/__tests__/invalid-spec.test.ts`** (B6): malformed YAML / invalid
+  colors / invalid radius are reported by `validateDesignSpec` (pure, non-
+  mutating); broken prose still yields a best-effort spec + warning, never a crash.
+- **`src/transformers/__tests__/token-diff.test.ts`** (B7): added/removed/changed/
+  unchanged classification, flatten helpers, `summarizeDiff`, `formatDiff({onlyChanged})`.
+- **`src/showroom/__tests__/showroom-smoke.test.ts`** (B8): renders the real
+  `<Showroom>` via `react-dom/server` for a built-in, an ingested brand
+  (`linear-dark`, token refs), and the DiffView — no browser required.
+- **`src/parser/__tests__/cache-invalidation.test.ts`** (B9): mtime+size
+  invalidation, reference-identical cache hits, `clearSpecCache` reset.
+- `packages/preview/src/Showroom.tsx`: removed an unused `formatDiff` import
+  (pre-existing `tsc` error under `noUnusedLocals` that would have failed CI).
+
+### Verification (offline)
+- `pnpm typecheck` clean; `pnpm test` → **289 passed** (was 267; +22 Phase B tests).
+
+
 
 ### Docs / hygiene (Backlog Phase A)
 - **`docs/CORPUS.md`** (new): full 84-brand inventory (71 front-matter, 13
