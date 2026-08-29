@@ -4,6 +4,137 @@ import type { DesignSpec } from "../spec/types.ts";
 
 export const INGESTED_SPECS: DesignSpec[] = [
   {
+    "id": "seed-noisy",
+    "name": "Seed Noisy",
+    "description": "Intentionally noisy edge-case brand — oklch colors, tertiary alias, unusual radius, missing description. Exercises the lenient parser path. Seed fixture for the visual-regression suite.",
+    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/_seed-noisy/DESIGN.md",
+    "colors": {
+      "background": "#0b0f1a",
+      "foreground": "#e6edf6",
+      "primary": "oklch(0.62 0.19 250)",
+      "secondary": "#46484d",
+      "accent": "oklch(0.7 0.16 320)",
+      "muted": "#1b2233",
+      "destructive": "#ff5a5f",
+      "border": "#2a3247",
+      "extra": {
+        "on-canvas": "#e6edf6",
+        "neutral-200": "#1b2233",
+        "surface-200": "#141a2b"
+      }
+    },
+    "typography": {
+      "heading": {
+        "fontFamily": "Space Grotesk",
+        "fontStack": [
+          "Space Grotesk",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "fontSizePx": 56,
+        "letterSpacingEm": -0.02
+      },
+      "body": {
+        "fontFamily": "IBM Plex Sans",
+        "fontStack": [
+          "IBM Plex Sans",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "fontSizePx": 16
+      },
+      "roles": {
+        "title": {
+          "fontFamily": "Space Grotesk",
+          "fontStack": [
+            "Space Grotesk",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ],
+          "fontSizePx": 32
+        },
+        "body-sm": {
+          "fontFamily": "IBM Plex Sans",
+          "fontStack": [
+            "IBM Plex Sans",
+            "ui-sans-serif",
+            "system-ui",
+            "sans-serif"
+          ],
+          "fontSizePx": 14
+        }
+      },
+      "baseSizePx": 16
+    },
+    "elevation": {
+      "radius": "0.75rem",
+      "radii": {
+        "sm": "0.25rem",
+        "md": "0.75rem",
+        "lg": "1.25rem",
+        "xl": "2rem"
+      },
+      "shadows": {
+        "md": "0 4px 16px rgba(0,0,0,0.45)",
+        "lg": "0 12px 40px rgba(0,0,0,0.55)"
+      }
+    },
+    "components": {},
+    "warnings": []
+  },
+  {
+    "id": "seed-sparse",
+    "name": "Seed Sparse",
+    "description": "Intentionally minimal brand — sparse token set (only base palette, no extra roles). Seed fixture for the visual-regression suite.",
+    "source": "/home/ubuntu/projects/awesome-design-forge/design-md/_seed-sparse/DESIGN.md",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#101010",
+      "primary": "#7c3aed",
+      "secondary": "#64748b",
+      "accent": "#7c3aed",
+      "muted": "#f1f5f9",
+      "destructive": "#dc2626",
+      "border": "#e2e8f0",
+      "extra": {}
+    },
+    "typography": {
+      "heading": {
+        "fontFamily": "Inter",
+        "fontStack": [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "fontSizePx": 30
+      },
+      "body": {
+        "fontFamily": "Inter",
+        "fontStack": [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "fontSizePx": 16
+      },
+      "roles": {},
+      "baseSizePx": 16
+    },
+    "elevation": {
+      "radius": "0.5rem",
+      "radii": {
+        "base": "0.5rem"
+      }
+    },
+    "components": {},
+    "warnings": []
+  },
+  {
     "id": "airbnb-design-analysis",
     "name": "Airbnb-design-analysis",
     "description": "A warm, generous consumer marketplace anchored on a clean white canvas and Airbnb Rausch (#ff385c), the single brand voltage that carries every primary CTA, search-button orb, and rating dot. Type runs Airbnb Cereal VF at modest weights — display sits at 22–28px in weight 500/600 rather than the heavy 700+ that fintech and enterprise systems use; the brand trusts photography and generous whitespace over typographic muscle. Three product entries (Homes, Experiences, Services) sit in the top nav with hand-illustrated 32-icon glyphs and \"NEW\" badges, signaling a marketplace expansion rather than a feature dump. Pill-shaped search bars (`{rounded.full}`), softly rounded property cards (`{rounded.lg}` ~14px), and 32px button radii read as friendly and human — there is no hard corner anywhere except the body grid.",
