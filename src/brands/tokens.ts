@@ -143,6 +143,8 @@ export const BRANDS: BrandTokens[] = [
  * and the browser. Use it everywhere instead of the raw `BRANDS` constant.
  */
 import { INGESTED } from "./ingested.ts";
+import { INGESTED_SPECS } from "./ingested-specs.ts";
+import type { DesignSpec } from "../spec/types.ts";
 
 export function loadAllBrands(): { brands: BrandTokens[]; ingested: number; warnings: string[] } {
   const merged = new Map<string, BrandTokens>();
@@ -150,6 +152,15 @@ export function loadAllBrands(): { brands: BrandTokens[]; ingested: number; warn
   const ingestedBrands = INGESTED;
   for (const b of ingestedBrands) merged.set(b.id, b);
   return { brands: [...merged.values()], ingested: ingestedBrands.length, warnings: [] };
+}
+
+/**
+ * All ingested DesignSpecs (baked from DESIGN.md). Used by the CLI/showroom to
+ * synthesize components per-spec (fonts, tracking, elevation). The 5 built-in
+ * demo brands have no DesignSpec, so this returns only ingested specs.
+ */
+export function loadAllSpecs(): { specs: DesignSpec[]; ingested: number } {
+  return { specs: INGESTED_SPECS, ingested: INGESTED_SPECS.length };
 }
 
 export function getBrand(id: string): BrandTokens {

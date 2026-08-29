@@ -3,13 +3,15 @@ import { Command } from "commander";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
-import { getBrand, loadAllBrands, type BrandTokens } from "../brands/tokens.ts";
+import { getBrand, loadAllBrands, loadAllSpecs, type BrandTokens } from "../brands/tokens.ts";
 import { ingestAndWrite } from "../brands/ingest.ts";
 import { emitThemeCss, emitTailwindTheme } from "../generators/css-variables.ts";
 import {
   generateComponent,
   PRIMITIVES,
 } from "../generators/component-factory.ts";
+import { parseDesignMd } from "../parser/design-parser.ts";
+import { specToBrandTokens } from "../generators/adapter.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 /** Resolve a brand by id from the merged built-in + ingested set. */
@@ -18,6 +20,23 @@ function resolveBrand(id: string): BrandTokens {
   const b = brands.find((x) => x.id === id);
   if (b) return b;
   return getBrand(id); // built-in fallback (throws if unknown)
+}
+
+/**
+ * Resolve a CLI arg to a BrandTokens.
+ *
+ * Two input shapes are supported so the pipeline can ingest ANY spec:
+ *   1. a brand id (built-in or previously ingested into ingested.ts), or
+ *   2. a path to a DESIGN.md file — parsed via the Phase A parser into a
+ *      DesignSpec, then bridged to BrandTokens via specToBrandTokens.
+ * This is the concrete "ingest any of the 74 brand specifications" entry point.
+ */
+async function resolveBrandOrFile(arg: string): Promise<BrandTokens> {
+  if (arg.endsWith(".md") && fs.existsSync(arg) && fs.statSync(arg).isFile()) {
+    const spec = await parseDesignMd(arg);
+    return specToBrandTokens(spec);
+  }
+  return resolveBrand(arg);
 }
 
 function ok(s: string) {
@@ -39,8 +58,8 @@ function cmdList() {
 }
 
 // ---- inspect ----
-function cmdInspect(id: string) {
-  const b = resolveBrand(id);
+async function cmdInspect(id: string) {
+  const b = await resolveBrandOrFile(id);
   ok(`\n${b.name}  (${b.id})`);
   ok(`  ${b.description}\n`);
   ok("  Colors:");
@@ -65,9 +84,25 @@ function ansi256(hex: string): number {
 }
 
 // ---- export ----
-function cmdExport(id: string, opts: { target: string; framework: "nextjs" | "vite" }) {
-  const b = resolveBrand(id);
+async function cmdExport(id: string, opts: { target: string; framework: "nextjs" | "vite"; force?: boolean }) {
+  const b = await resolveBrandOrFile(id);
+  // Per-spec synthesis: prefer the full DesignSpec (from a .md path, or the
+  // baked spec registry for ingested brands) so components reflect the brand's
+  // real typography/elevation/palette rather than just the theme CSS vars.
+  let spec: import("../spec/types.ts").DesignSpec | undefined;
+  if (id.endsWith(".md") && fs.existsSync(id) && fs.statSync(id).isFile()) {
+    spec = await parseDesignMd(id);
+  } else {
+    const { specs } = loadAllSpecs();
+    spec = specs.find((s) => s.id === b.id);
+  }
   const target = path.resolve(opts.target);
+  // Guardrail: never clobber an existing, non-empty target without --force.
+  if (!opts.force && fs.existsSync(target) && fs.readdirSync(target).length > 0) {
+    console.error(`! Target directory is not empty: ${target}`);
+    console.error(`  Refusing to overwrite existing files. Use --force to override.`);
+    process.exit(1);
+  }
   fs.mkdirSync(target, { recursive: true });
   const componentsDir = path.join(target, "components", "ui");
   const stylesDir = path.join(target, "styles");
@@ -84,7 +119,7 @@ function cmdExport(id: string, opts: { target: string; framework: "nextjs" | "vi
   // monorepo). Once exported into components/ui/, the helper lives alongside as
   // ./cn, so rewrite the relative import before writing.
   for (const p of PRIMITIVES) {
-    const src = generateComponent(p).replace(/from "(\.\.\/lib\/cn)"/g, 'from "./cn"');
+    const src = generateComponent(p, spec).replace(/from "(\.\.\/lib\/cn)"/g, 'from "./cn"');
     fs.writeFileSync(path.join(componentsDir, `${p}.tsx`), src);
   }
   // shared cn helper
@@ -262,17 +297,28 @@ program.command("list").description("List all brands (built-in + ingested DESIGN
 
 program
   .command("inspect")
-  .argument("<brand>", "brand id")
-  .description("Show terminal swatches + typography for a brand")
-  .action(cmdInspect);
+  .argument("<brand>", "brand id OR path to a DESIGN.md spec file")
+  .description("Show terminal swatches + typography for a brand (id or .md file)")
+  .action((id: string) => {
+    Promise.resolve(cmdInspect(id)).catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
+  });
 
 program
   .command("export")
-  .argument("<brand>", "brand id")
+  .argument("<brand>", "brand id OR path to a DESIGN.md spec file")
   .requiredOption("--target <dir>", "output directory")
   .option("--framework <fw>", "vite | nextjs", "vite")
-  .description("Inject theme + components into a real project")
-  .action(cmdExport);
+  .option("--force", "overwrite an existing, non-empty target directory")
+  .description("Inject theme + components into a real project (brand id OR .md spec path)")
+  .action((id: string, opts: { target: string; framework: "vite" | "nextjs" }) => {
+    Promise.resolve(cmdExport(id, opts)).catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
+  });
 
 program
   .command("preview")
@@ -289,7 +335,7 @@ program
   .command("ingest")
   .argument("<dir>", "directory of DESIGN.md specs (recursive)")
   .description("Ingest DESIGN.md brand specs into the brand registry and report")
-  .action((dir: string) => {
+  .action(async (dir: string) => {
     const abs = path.resolve(dir);
     if (!fs.existsSync(abs) || !fs.statSync(abs).isDirectory()) {
       console.error(`! Spec directory not found: ${abs}`);
@@ -297,7 +343,7 @@ program
       process.exit(1);
     }
     const outFile = path.join(__dirname, "..", "brands", "ingested.ts");
-    const { brands, files, warnings } = ingestAndWrite(abs, outFile);
+    const { brands, files, warnings } = await ingestAndWrite(abs, outFile);
     ok(`Scanned ${files} .md files in ${abs}`);
     ok(`Parsed ${brands.length} brand(s); baked -> ${outFile}`);
     for (const b of brands) {
