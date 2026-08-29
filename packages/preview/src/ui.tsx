@@ -5,7 +5,7 @@ import { cn } from "../../../src/lib/cn.ts";
 /** Live UI kit used by the preview showroom. Mirrors the class contract emitted
  *  by src/generators/component-factory.ts (same Tailwind utilities, same vars). */
 
-type Variant = "primary" | "secondary" | "outline" | "ghost";
+type Variant = "primary" | "secondary" | "accent" | "muted" | "destructive" | "outline" | "ghost";
 type Size = "sm" | "md" | "lg";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -17,6 +17,9 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 const variants: Record<Variant, string> = {
   primary: "bg-primary text-primary-foreground hover:opacity-90",
   secondary: "bg-secondary text-secondary-foreground hover:opacity-90",
+  accent: "bg-accent text-accent-foreground hover:opacity-90",
+  muted: "bg-muted text-muted-foreground hover:opacity-90",
+  destructive: "bg-destructive text-destructive-foreground hover:opacity-90",
   outline: "border border-border bg-transparent text-foreground hover:bg-muted",
   ghost: "bg-transparent text-foreground hover:bg-muted",
 };
