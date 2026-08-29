@@ -291,6 +291,11 @@ program
   .description("Ingest DESIGN.md brand specs into the brand registry and report")
   .action((dir: string) => {
     const abs = path.resolve(dir);
+    if (!fs.existsSync(abs) || !fs.statSync(abs).isDirectory()) {
+      console.error(`! Spec directory not found: ${abs}`);
+      console.error(`  Run \`design-forge ingest design-md\` from the repo root.`);
+      process.exit(1);
+    }
     const outFile = path.join(__dirname, "..", "brands", "ingested.ts");
     const { brands, files, warnings } = ingestAndWrite(abs, outFile);
     ok(`Scanned ${files} .md files in ${abs}`);
