@@ -1,8 +1,35 @@
 # Changelog
 
-## [1.0.0] - 2026-08-29
+## [1.6.0] - 2026-08-29 (design-forge)
 
 ### Added
+- **Full-corpus ingest (issue #2):** the ingester now bakes a clean **84-brand**
+  registry from the entire `design-md/` corpus (76 `DESIGN.md` + `starter.md` +
+  8 loose specs) instead of 157 brands where 73 were phantom
+  `readme-md`/`Unknown`/`design-md-N` artifacts.
+
+### Fixed
+- `isBrandSpec()` gate (`src/parser/design-parser.ts`): a `.md` is treated as a
+  real spec only if it has front matter (`name`/`colors`/`typography`) **or** a
+  brand-related prose heading, and is **not** a placeholder that defers to an
+  external site (`getdesign.md`). Previously the ingester walked every `.md`, so
+  73 placeholder `README.md` docs baked into phantom brands that polluted the
+  showroom + export.
+- `fallbackSpec()`: genuine-but-non-front-matter brand docs (e.g. Kraken /
+  Spotify prose analyses, YAML-broken elevenlabs) now ingest as best-effort
+  neutral brands with a documented, non-fatal warning — no longer dropped or
+  ghosted into `design-md-N`.
+- Gate wired into all three ingest paths (`ingestDir`, `ingestDirSpecs`,
+  `ingestDirDesignSpecs`); baked registry regenerated.
+
+### Tests
+- `src/parser/__tests__/is-brand-spec.test.ts` locks the gate behavior.
+
+### Notes
+- Visual regression (`pnpm test:visual`) remains environment-blocked on the
+  build VPS (missing browser system libs — `libglib-2.0.so.0`); it runs on the
+  networked CI `visual` job. Not faked.
+
 - **DESIGN.md ingester** (`src/brands/ingest.ts`): recursively parses
   `*.md` brand specs (YAML front matter) into the internal `BrandTokens`
   model, resolving `{token}` references, inferring missing foregrounds via
