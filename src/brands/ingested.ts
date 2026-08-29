@@ -4,6 +4,594 @@ import type { BrandTokens } from "./tokens.ts";
 
 export const INGESTED: BrandTokens[] = [
   {
+    "id": "airbnb-design-analysis",
+    "name": "Airbnb-design-analysis",
+    "description": "A warm, generous consumer marketplace anchored on a clean white canvas and Airbnb Rausch (#ff385c), the single brand voltage that carries every primary CTA, search-button orb, and rating dot. Type runs Airbnb Cereal VF at modest weights — display sits at 22–28px in weight 500/600 rather than the heavy 700+ that fintech and enterprise systems use; the brand trusts photography and generous whitespace over typographic muscle. Three product entries (Homes, Experiences, Services) sit in the top nav with hand-illustrated 32-icon glyphs and \"NEW\" badges, signaling a marketplace expansion rather than a feature dump. Pill-shaped search bars (`{rounded.full}`), softly rounded property cards (`{rounded.lg}` ~14px), and 32px button radii read as friendly and human — there is no hard corner anywhere except the body grid.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#ff385c",
+      "secondary": "#ff385c",
+      "accent": "#ff385c",
+      "muted": "#6a6a6a",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.875rem",
+    "typography": {
+      "heading": "'Airbnb Cereal VF', Circular, -apple-system, system-ui, Roboto, 'Helvetica Neue', sans-serif",
+      "body": "'Airbnb Cereal VF', Circular, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "airtable-design-analysis",
+    "name": "Airtable-design-analysis",
+    "description": "A sober, editorial workflow-software interface anchored on white canvas and dark-ink type, where brand voltage comes from full-bleed signature cards in coral, dark green, peach, and dark navy that punctuate long-scroll explainer pages. Primary actions use a near-black pill CTA; secondary actions sit in a white outlined button. Type runs Haas Grotesk in modest weights — never bold for its own sake.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#181d26",
+      "secondary": "#181d26",
+      "accent": "#181d26",
+      "muted": "#41454d",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.625rem",
+    "typography": {
+      "heading": "Haas Groot Disp, Haas, sans-serif",
+      "body": "Haas, sans-serif",
+      "baseSize": 14
+    }
+  },
+  {
+    "id": "readme-md-2",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "apple-design-analysis",
+    "name": "Apple-design-analysis",
+    "description": "A photography-first interface that turns marketing into a museum gallery. Edge-to-edge product tiles alternate light and dark canvases, framed by SF Pro Display headlines with negative letter-spacing and a single Action Blue (#0066cc) interactive color. UI chrome recedes so the product can speak — no decorative gradients, no shadows on chrome, only the one signature drop-shadow under product imagery resting on a surface.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#0066cc",
+      "secondary": "#0066cc",
+      "accent": "#0066cc",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.6875rem",
+    "typography": {
+      "heading": "SF Pro Display, system-ui, -apple-system, sans-serif",
+      "body": "SF Pro Text, system-ui, -apple-system, sans-serif",
+      "baseSize": 17
+    }
+  },
+  {
+    "id": "readme-md-3",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "binance-design-analysis",
+    "name": "Binance-design-analysis",
+    "description": "A confident financial-platform interface anchored on a deep near-black canvas, where Binance's iconic yellow (#FCD535) carries every primary CTA, brand accent, and value-claim moment. Type runs Binance's custom BinanceNova / BinancePlex stack at modest weights — the system trusts size and yellow voltage over bold weight. Marketing and product surfaces default to the dark theme; transactional surfaces (buy crypto, deposit, exchange) flip to a light theme that shares the same yellow CTAs and gray-blue hairlines. Trading green (up) and red (down) accents thread through both modes for price-direction signals.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#fcd535",
+      "secondary": "#fcd535",
+      "accent": "#fcd535",
+      "muted": "#707a8a",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.375rem",
+    "typography": {
+      "heading": "BinanceNova, -apple-system, BlinkMacSystemFont, sans-serif",
+      "body": "BinanceNova, sans-serif",
+      "baseSize": 14
+    }
+  },
+  {
+    "id": "readme-md-4",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "bmw-design-analysis",
+    "name": "BMW-design-analysis",
+    "description": "BMW's corporate site — distinct from BMW M's motorsport-bombastic variant, this is a measured and settled corporate-automotive interface. On a light (cream-tinted white) canvas, BMW corporate blue (#1c69d4) carries every primary CTA; dark navy hero bands frame model photography. BMW Type Next Latin sets the entire hierarchy on two weights — heavy 700 display and Light 300 body. Configuration and reservation flows ride a card-based 4-up grid, where each card holds a model render, a name, and a \"Learn More\" link.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#1c69d4",
+      "secondary": "#1c69d4",
+      "accent": "#1c69d4",
+      "muted": "#6b6b6b",
+      "destructive": "#dc2626",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "'BMW Type Next Latin', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "body": "'BMW Type Next Latin', sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-5",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "bmw-m-design-analysis",
+    "name": "BMW-M-design-analysis",
+    "description": "A motorsport-engineering interface anchored on a near-black canvas with white BMW Type Next Latin display headlines in confident UPPERCASE. The brand carries no decorative voltage — its energy comes from full-bleed automotive photography (cars on tracks, driver-cockpit shots, carbon-fiber detail) and the iconic M tricolor stripe (light blue → dark blue → red) used sparingly as a brand signature on logos, dividers, and motorsport chrome. Type stays light to medium weight to feel European-engineered, never American-bombastic.",
+    "colors": {
+      "background": "#000000",
+      "foreground": "#fafafa",
+      "primary": "#ffffff",
+      "secondary": "#ffffff",
+      "accent": "#ffffff",
+      "muted": "#7e7e7e",
+      "destructive": "#ef4444",
+      "border": "#1e1e1e"
+    },
+    "radius": "0.375rem",
+    "typography": {
+      "heading": "BMWTypeNextLatin, sans-serif",
+      "body": "BMWTypeNextLatin Light, BMWTypeNextLatin, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-6",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "bugatti-design-analysis",
+    "name": "Bugatti-design-analysis",
+    "description": "An austere luxury-automotive interface that uses near-pure black canvas, white uppercase letterspaced display, and full-bleed automotive photography as the only voltage. The system runs three custom Bugatti typefaces — Bugatti Display, Bugatti Text Regular, and Bugatti Monospace — and combines them at modest weights with wide tracking to feel European-engineered, hyper-minimal, and quietly expensive. There is no accent color, no decorative element, no chrome — only photography, typography, and the brand wordmark.",
+    "colors": {
+      "background": "#000000",
+      "foreground": "#fafafa",
+      "primary": "#ffffff",
+      "secondary": "#ffffff",
+      "accent": "#ffffff",
+      "muted": "#999999",
+      "destructive": "#ef4444",
+      "border": "#1e1e1e"
+    },
+    "radius": "0rem",
+    "typography": {
+      "heading": "Bugatti Display, sans-serif",
+      "body": "Bugatti Text Regular, serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-7",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "cal-com-design-analysis",
+    "name": "Cal.com-design-analysis",
+    "description": "A clean, calendar-software-first interface anchored on white canvas with black primary CTAs and custom Cal Sans display typography. The system reads as friendly modern SaaS — generous whitespace, soft-rounded cards (~12px), product UI fragments shown directly inside cards, and a dark navy footer that visually closes long-scroll pages. Brand voltage comes from the Cal Sans display headline (a custom geometric face) and from product UI artifacts shown in-card rather than from accent colors.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#111111",
+      "secondary": "#111111",
+      "accent": "#111111",
+      "muted": "#6b7280",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Cal Sans, Inter, sans-serif",
+      "body": "Inter, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-8",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "claude-design-analysis",
+    "name": "Claude-design-analysis",
+    "description": "A warm-canvas editorial interface for Anthropic's Claude product. The system anchors on a tinted cream canvas with serif display headlines, warm coral CTAs, and dark navy product surfaces (code editor mockups, model showcase cards). Brand voltage comes from the cream/coral pairing — deliberately warm and humanist where most AI brands use cool blue + slate. Type voice runs a slab-serif display (\"Copernicus\" / Tiempos Headline) for h1/h2 and a humanist sans for body. The signature Anthropic black-radial-spike mark anchors the wordmark.",
+    "colors": {
+      "background": "#faf9f5",
+      "foreground": "#0a0a0a",
+      "primary": "#cc785c",
+      "secondary": "#cc785c",
+      "accent": "#cc785c",
+      "muted": "#6c6a64",
+      "destructive": "#c64545",
+      "border": "#dddcd9"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Copernicus, Tiempos Headline, serif",
+      "body": "StyreneB, Inter, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-9",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "clay-design-analysis",
+    "name": "Clay-design-analysis",
+    "description": "A vibrant claymation-meets-data interface for Clay.com (GTM data-orchestration platform). Anchors on white canvas with dark-navy primary CTAs, custom rounded display type, and saturated single-color feature cards — hot pink, deep teal, lavender, peach, ochre — that punctuate long-scroll explainer pages. Brand voltage comes from 3D-rendered claymation illustrations (mountains, characters, mascots) used as full-bleed hero artifacts and the bright multi-color card surfaces showing product UI fragments.",
+    "colors": {
+      "background": "#fffaf0",
+      "foreground": "#0a0a0a",
+      "primary": "#0a0a0a",
+      "secondary": "#0a0a0a",
+      "accent": "#0a0a0a",
+      "muted": "#6a6a6a",
+      "destructive": "#ef4444",
+      "border": "#e2ddd4"
+    },
+    "radius": "0.75rem",
+    "typography": {
+      "heading": "Plain Black, Inter, sans-serif",
+      "body": "Inter, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-10",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "clickhouse-design-analysis",
+    "name": "ClickHouse-design-analysis",
+    "description": "A high-performance database interface anchored on near-pure black canvas with electric yellow as the brand voltage. White typography in confident sans, yellow CTAs, and yellow-text stat numbers carry the brand voice across every page. Code blocks and product UI fragments embed directly in dark cards. The yellow + black pairing (and yellow used scarcely as accent) is the system's signature — brand identity without atmospheric decoration.",
+    "colors": {
+      "background": "#0a0a0a",
+      "foreground": "#fafafa",
+      "primary": "#faff69",
+      "secondary": "#faff69",
+      "accent": "#faff69",
+      "muted": "#888888",
+      "destructive": "#ef4444",
+      "border": "#272727"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter, sans-serif",
+      "body": "Inter, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-11",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "cohere-design-analysis",
+    "name": "Cohere-design-analysis",
+    "description": "Cohere's 2026 web system is a controlled enterprise AI interface built from stark white editorial space, deep green-black product bands, soft mineral surfaces, rounded media cards, and a distinctive type split between monospaced-feeling display headlines and precise Unica77 UI text.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#17171c",
+      "secondary": "#17171c",
+      "accent": "#17171c",
+      "muted": "#93939f",
+      "destructive": "#b30000",
+      "border": "#e2e2e2"
+    },
+    "radius": "1rem",
+    "typography": {
+      "heading": "CohereText",
+      "body": "Unica77 Cohere Web",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-12",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "coinbase-design-analysis",
+    "name": "Coinbase-design-analysis",
+    "description": "An institutional-grade crypto exchange whose marketing surfaces read like a quietly-confident financial-services brand. The base canvas is pure white; Coinbase Blue (`#0052ff`) is the single brand voltage, used scarcely on primary CTAs, signature glyphs, and inline accent moments. Type runs Coinbase's licensed CoinbaseDisplay (display) and CoinbaseSans (body) at modest weights — display sits at weight 400 not 700, signaling editorial calm rather than fintech-bombastic. Page rhythm rotates between bright white sections, soft gray elevation bands, and full-bleed dark editorial heroes (`#0a0b0d`) carrying product-ui mockup cards. Iconography is geometric and minimal; depth comes from card-on-card layering, never decorative shadows.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#0052ff",
+      "secondary": "#0052ff",
+      "accent": "#0052ff",
+      "muted": "#7c828a",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.75rem",
+    "typography": {
+      "heading": "'Coinbase Display', -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+      "body": "'Coinbase Sans', sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-13",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "composio-design-analysis",
+    "name": "Composio-design-analysis",
+    "description": "A developer-tools brand for AI-agent tool integration whose marketing surfaces lean into a dark, technical aesthetic with a single deep-electric-blue voltage (`#0007cd`). The page floor is near-black (`#0f0f0f`); cards float above on subtle gray-tinted surfaces. abcDiatype carries display and body in a single sans family with weights 400-600. The brand's strongest visual signature is a four-pane terminal-style mockup (a 2×2 grid of dark code/output panels) with a central blue spotlight glow — used as the homepage hero anchor.",
+    "colors": {
+      "background": "#0f0f0f",
+      "foreground": "#fafafa",
+      "primary": "#0007cd",
+      "secondary": "#0007cd",
+      "accent": "#0007cd",
+      "muted": "#888888",
+      "destructive": "#ef4444",
+      "border": "#2b2b2b"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "body": "'abcDiatype', ui-sans-serif, system-ui, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-14",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
     "id": "coral-pop",
     "name": "Coral Pop",
     "description": "Playful consumer — coral + sky, friendly radius, only primary/secondary/neutral given.",
@@ -25,6 +613,132 @@ export const INGESTED: BrandTokens[] = [
     }
   },
   {
+    "id": "cursor-design-analysis",
+    "name": "Cursor-design-analysis",
+    "description": "An AI-first code editor whose marketing site reads like a quietly-confident developer-tools brand with a warm-cream editorial canvas (`#f7f7f4`) instead of the typical dark IDE atmosphere. Near-black warm ink (`#26251e`) carries body and display alike — display sits at weight 400 with negative letter-spacing for a magazine feel rather than a bold tech voice. The single brand voltage is **Cursor Orange** (`#f54e00`) reserved for primary CTAs and the wordmark. A signature pastel timeline palette (peach, mint, blue, lavender, gold) marks AI-action stages (Thinking / Reading / Editing / Grepping / Done) — only inside in-product timeline visualizations. Cards use minimal hairlines, no shadows, generous 80px section rhythm. CursorGothic for display/body, JetBrains Mono on every code surface (which is roughly half the page).",
+    "colors": {
+      "background": "#f7f7f4",
+      "foreground": "#0a0a0a",
+      "primary": "#f54e00",
+      "secondary": "#f54e00",
+      "accent": "#f54e00",
+      "muted": "#807d72",
+      "destructive": "#ef4444",
+      "border": "#dbdbd8"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "'CursorGothic', system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "body": "'CursorGothic', sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-15",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "dell-1996-inspired",
+    "name": "Dell 1996 Inspired",
+    "description": "An inspired interpretation of Dell.com's 1996 design language — a catalog-era enterprise web design built around a literal black page frame, vivid flat color-block \"ribbon cards\" tinted in sage, salmon, periwinkle, sky, peach and lime, chunky Helvetica-Black display titles, Times Roman body copy, and an entire visual vocabulary of pre-Photoshop hand-cut GIF stickers (NEW! bursts, award seals, beveled product photos).",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#e91d2a",
+      "secondary": "#e91d2a",
+      "accent": "#e91d2a",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0rem",
+    "typography": {
+      "heading": "Arial Black",
+      "body": "Times New Roman",
+      "baseSize": 14
+    }
+  },
+  {
+    "id": "readme-md-16",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-17",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
     "id": "ember-fintech",
     "name": "Ember Fintech",
     "description": "Warm fintech — charcoal canvas, amber ember, minimal tokens (missing on-* and typography entirely).",
@@ -37,6 +751,216 @@ export const INGESTED: BrandTokens[] = [
       "muted": "#19191d",
       "destructive": "#ef4444",
       "border": "#27272b"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "expo-design-analysis",
+    "name": "Expo-design-analysis",
+    "description": "A React Native developer-platform whose marketing site reads like a quietly-confident infrastructure brand. The base canvas is pure white with a soft sky-blue gradient atmospheric wash behind the hero; near-black ink (`#171717`) carries body and display alike. The single brand voltage is **pure black** (`#000000`) for primary CTAs — minimal and editorial-feeling, paired with a small blue text-link accent (`#0d74ce`) reserved for inline body links. Type pairs Inter at modest weights (display 600, body 400) with JetBrains Mono on every code surface. The brand's strongest visual signature is the **device-mockup hero** — a centered MacBook + iPhone composite showing real Expo dev surfaces — over the gradient sky wash.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "accent": "#000000",
+      "muted": "#999999",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "'Inter', -apple-system, system-ui, sans-serif",
+      "body": "'Inter', sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-18",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "ferrari-design-analysis",
+    "name": "Ferrari-design-analysis",
+    "description": "A luxury-automotive brand whose marketing surfaces read as cinematic editorial. The base canvas is **near-black** (`#181818`) holding pure white display type; white-canvas bands appear only inside specific editorial contexts (preowned listings, pricing tables). The single brand voltage is **Rosso Corsa** (`#da291c`) — the iconic Ferrari racing red — used scarcely on primary CTAs, the Cavallino mark, and Formula 1 race-position highlights. Type runs **FerrariSans** at modest weights (display 500, body 400) — never bombastic. Spacing follows an explicit 8px token ladder (`xxxs` 4px through `super` 128px); generous editorial pacing throughout. The brand's strongest visual signature is the **full-bleed cinematic hero photograph** that fills the viewport top with car photography, model details, or trackside livery — followed by a tighter editorial body layout below.",
+    "colors": {
+      "background": "#181818",
+      "foreground": "#fafafa",
+      "primary": "#da291c",
+      "secondary": "#da291c",
+      "accent": "#da291c",
+      "muted": "#666666",
+      "destructive": "#ef4444",
+      "border": "#333333"
+    },
+    "radius": "0.375rem",
+    "typography": {
+      "heading": "'FerrariSans', -apple-system, system-ui, sans-serif",
+      "body": "'FerrariSans', sans-serif",
+      "baseSize": 14
+    }
+  },
+  {
+    "id": "readme-md-19",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "figma-design-analysis",
+    "name": "Figma-design-analysis",
+    "description": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure black ink, pill-shaped CTAs — while each story section drops the page into a saturated lime, lavender, cream, mint, or pink panel that reads like a sticky note placed on a clean desk. The result is a design system that feels both technical and joyful — a tool for serious work, made by people who like color.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "accent": "#000000",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "figmaSans",
+      "body": "figmaSans",
+      "baseSize": 20
+    }
+  },
+  {
+    "id": "readme-md-20",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "framer-design-analysis",
+    "name": "Framer-design-analysis",
+    "description": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident blue (#0099ff) reserved for hyperlinks and selection states. The page rhythm is broken by oversized vibrant gradient atmosphere panels — magenta, violet, orange spotlights — that act as living showcase tiles, not decoration. Every CTA is a white pill on dark; every card is a translucent or charcoal surface; every section title pulls letter-spacing tight enough to feel like a poster.",
+    "colors": {
+      "background": "#090909",
+      "foreground": "#fafafa",
+      "primary": "#ffffff",
+      "secondary": "#ffffff",
+      "accent": "#ffffff",
+      "muted": "#171717",
+      "destructive": "#ef4444",
+      "border": "#262626"
+    },
+    "radius": "0.625rem",
+    "typography": {
+      "heading": "GT Walsheim Framer Medium",
+      "body": "Inter Variable",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-21",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "hashicorp-design-analysis",
+    "name": "HashiCorp-design-analysis",
+    "description": "An enterprise-infrastructure marketing canvas built around a near-black ground (#000000) and a system of per-product accent colors — Terraform purple, Vault yellow, Consul pink, Waypoint cyan, Vagrant blue — that act as identity tokens rather than decorative palette. Display type is hashicorpSans set in 600/700 with tight 1.17–1.21 line-heights; body type runs the same family at 500 weight with relaxed 1.50–1.71 line-heights. Cards live as charcoal surfaces with 1px translucent gray borders; product showcase cards lift into per-product chromatic gradients. The system reads as confident, technical, and intentionally multi-product — every section quietly signals which HashiCorp tool it represents.",
+    "colors": {
+      "background": "#000000",
+      "foreground": "#fafafa",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "accent": "#000000",
+      "muted": "#0f0f0f",
+      "destructive": "#ef4444",
+      "border": "#1e1e1e"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "hashicorpSans",
+      "body": "hashicorpSans",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-22",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
     },
     "radius": "0.5rem",
     "typography": {
@@ -67,6 +991,216 @@ export const INGESTED: BrandTokens[] = [
     }
   },
   {
+    "id": "hp-design-analysis",
+    "name": "HP-design-analysis",
+    "description": "An inspired interpretation of HP's design language — a white-paper enterprise-consumer system anchored by HP Electric Blue (`#024ad8`) as the lone signal CTA, near-black ink (`#1a1a1a`) for headlines, geometric Forma-DJR sans throughout, and angular blue-chevron decorations that nod to the HP wordmark's slashes. Cards round at 8–16px, photos sit in soft 16px frames, and dark navy slabs anchor the customer-story and \"how can we help\" closing bands.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#024ad8",
+      "secondary": "#024ad8",
+      "accent": "#024ad8",
+      "muted": "#f0f0f0",
+      "destructive": "#b3262b",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.25rem",
+    "typography": {
+      "heading": "Forma DJR Micro",
+      "body": "Forma DJR Micro",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-23",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "ibm-design-analysis",
+    "name": "IBM-design-analysis",
+    "description": "An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px. Type runs IBM Plex Sans at light weight 300 for display sizes (a brand signature) and 400/600 for body and emphasis. Cards live as thin-bordered tiles with no shadow; sections separate via subtle gray rows. The chrome is square, the typography is light, and the only color in the system is one assertive blue — the result reads as old-world enterprise gravitas reframed for the cloud era.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#0f62fe",
+      "secondary": "#0f62fe",
+      "accent": "#0f62fe",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.375rem",
+    "typography": {
+      "heading": "IBM Plex Sans",
+      "body": "IBM Plex Sans",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-24",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "intercom-design-analysis",
+    "name": "Intercom-design-analysis",
+    "description": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand. Cards live as floating white tiles with thin hairline borders and minimal radii (8–16px). Display headlines run Saans at weight 500 with measured negative tracking. The system reads as a careful, product-led publication: product screenshots dominate, ornament is rare, and the only place chromatic energy enters is the Fin Orange CTA.",
+    "colors": {
+      "background": "#f5f1ec",
+      "foreground": "#0a0a0a",
+      "primary": "#111111",
+      "secondary": "#111111",
+      "accent": "#111111",
+      "muted": "#e7e3de",
+      "destructive": "#ef4444",
+      "border": "#d9d5d1"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Saans",
+      "body": "Saans",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-25",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-2",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-26",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-3",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-27",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
     "id": "linear-dark",
     "name": "Linear Dark",
     "description": "Productivity SaaS — near-black canvas, signature indigo, token references used throughout.",
@@ -79,6 +1213,384 @@ export const INGESTED: BrandTokens[] = [
       "muted": "#151617",
       "destructive": "#ef4444",
       "border": "#232424"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "linear-design-analysis",
+    "name": "Linear-design-analysis",
+    "description": "A near-black product-focused marketing canvas built around #010102 (the deepest dark surface of any tool in this collection), light gray text (#f7f8f8), and the signature Linear lavender-blue (#5e6ad2) used as the single chromatic accent. The system reads as software-craft documentation: dense, technical, and quietly luxurious. Display type is set in the Linear custom sans (SF Pro Display fallback) at 500–700 with measured negative tracking. Cards live as charcoal panels (#0f1011) with hairline borders. The accent lavender appears on the brand mark, focus rings, and a few intentional CTAs — never decoratively. Page rhythm leans on product UI screenshots framed in dark panels rather than atmospheric color.",
+    "colors": {
+      "background": "#010102",
+      "foreground": "#fafafa",
+      "primary": "#5e6ad2",
+      "secondary": "#5e6ad2",
+      "accent": "#5e6ad2",
+      "muted": "#101011",
+      "destructive": "#ef4444",
+      "border": "#1f1f20"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Linear Display",
+      "body": "Linear Text",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-28",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-4",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-29",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-5",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-30",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "meta-design-analysis",
+    "name": "Meta-design-analysis",
+    "description": "Meta's design system spans hardware commerce (Quest VR, Ray-Ban Meta AI glasses) and brand surfaces with a confident product-merchandising voice. The system pairs a stark white canvas with full-bleed photographic product cards, a confident Optimistic VF wordmark/headline face, dual-CTA hero patterns (black primary + outlined secondary), and a saturated cobalt blue (#0064E0) for in-product purchase actions. Pill-shaped 100px-radius buttons, generous 24-32px card rounding, and tight three-tier text hierarchy carry across homepage, product detail (PDP), buy-now configurator, and accessory subpages.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#0064e0",
+      "secondary": "#0064e0",
+      "accent": "#0064e0",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.375rem",
+    "typography": {
+      "heading": "Optimistic VF",
+      "body": "Optimistic VF",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-31",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "minimax-design-analysis",
+    "name": "MiniMax-design-analysis",
+    "description": "MiniMax presents itself as a premium AI infrastructure brand through a striking duality — bold black-pill CTAs and stark white canvas for marketing, paired with vibrant gradient product cards (orange-red, magenta-pink, purple, blue) that turn each model release into a distinctive visual identity. The system uses DM Sans across all surfaces, employs an oversized 80px hero display, anchors major actions in deep near-black pills, and layers content density via a 3-column documentation grid with sidebar nav, prose body, and TOC. Coverage spans the marketing homepage, model showcase pages, developer documentation, and platform pricing surfaces.",
+    "colors": {
+      "background": "#f7f8fa",
+      "foreground": "#0a0a0a",
+      "primary": "#0a0a0a",
+      "secondary": "#0a0a0a",
+      "accent": "#0a0a0a",
+      "muted": "#a8aab2",
+      "destructive": "#ef4444",
+      "border": "#dbdbdd"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "DM Sans",
+      "body": "DM Sans",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-32",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "mintlify-design-analysis",
+    "name": "Mintlify-design-analysis",
+    "description": "Mintlify presents documentation infrastructure with a dual-mode aesthetic — atmospheric sky-gradient marketing heroes (cloud illustration backdrops, soft cream-to-blue washes) paired with dense developer-grade documentation surfaces. The system uses Inter for UI prose, Geist Mono for code, and a signature Mintlify green ({colors.brand-green}) reserved for accent CTAs and active states. Black-pill primary buttons dominate marketing, white-on-dark inversions appear on dark hero bands, and a 3-column documentation layout (sidebar / prose / TOC) anchors the developer experience. Coverage spans homepage, startups program, pricing comparison, and the live tabs documentation page.",
+    "colors": {
+      "background": "#f7f7f7",
+      "foreground": "#0a0a0a",
+      "primary": "#0a0a0a",
+      "secondary": "#0a0a0a",
+      "accent": "#0a0a0a",
+      "muted": "#a8a8aa",
+      "destructive": "#ef4444",
+      "border": "#dbdbdb"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-33",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "miro-design-analysis",
+    "name": "Miro-design-analysis",
+    "description": "Miro presents itself as the AI-powered visual workspace through a confident, almost playful brand voice — anchored by its signature canary yellow ({colors.brand-yellow}) wordmark over white canvas, broken open by colorful pastel feature tints (rose, teal, coral, orange, mint) that echo the actual sticky-note color palette used on the live whiteboard. Black-pill primary buttons dominate marketing, real Miro-board mockups serve as feature illustrations, and a 4-tier pricing grid leads into a dense comparison table. Roobert PRO carries display headlines; the system supports homepage, pricing, AI Workflows product page, agile vertical, and customer stories surfaces.",
+    "colors": {
+      "background": "#f7f8fa",
+      "foreground": "#0a0a0a",
+      "primary": "#1c1c1e",
+      "secondary": "#1c1c1e",
+      "accent": "#1c1c1e",
+      "muted": "#a5a8b5",
+      "destructive": "#ef4444",
+      "border": "#dbdbdd"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Roobert PRO",
+      "body": "Roobert PRO",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-34",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "mistral-ai-design-analysis",
+    "name": "Mistral-AI-design-analysis",
+    "description": "Mistral AI brands itself with a singular signature — atmospheric sunset gradients (mustard, orange, deep red) layered over photography of mountains, plus a horizontal \"sunset stripe\" bar that closes every page. The system pairs warm cream-yellow surfaces ({colors.cream}) with a saturated orange primary CTA ({colors.primary}) and uses an elegant near-serif voice for hero displays. Coverage spans homepage (Frontier AI hero), Le Studio product page, Coding solutions, news article surfaces, contact form, and services tier page — all anchored by the signature gradient closing band.",
+    "colors": {
+      "background": "#fafafa",
+      "foreground": "#0a0a0a",
+      "primary": "#fa520f",
+      "secondary": "#fa520f",
+      "accent": "#fa520f",
+      "muted": "#a8a8a8",
+      "destructive": "#ef4444",
+      "border": "#dddddd"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "PP Editorial Old",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-35",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "mongodb-design-analysis",
+    "name": "MongoDB-design-analysis",
+    "description": "MongoDB carries a strong dual-mode visual identity — dark deep-teal hero bands with bright MongoDB green ({colors.brand-green}) CTAs paired with stark white documentation surfaces. The signature green pill button is unmistakable across product, pricing, learning, and AI use-case surfaces. The system uses Euclid Circular A as its display face, anchors a 3-tier pricing comparison (Free / Flex / Dedicated), and presents extensive course catalogs in card grids with colored category tags. Coverage spans homepage, Atlas product page, Community Edition, MongoDB University, AI use cases, and pricing.",
+    "colors": {
+      "background": "#f9fbfa",
+      "foreground": "#0a0a0a",
+      "primary": "#00ed64",
+      "secondary": "#00ed64",
+      "accent": "#00ed64",
+      "muted": "#a8b3bc",
+      "destructive": "#ef4444",
+      "border": "#dcdedd"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Euclid Circular A",
+      "body": "Euclid Circular A",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-36",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
     },
     "radius": "0.5rem",
     "typography": {
@@ -109,6 +1621,48 @@ export const INGESTED: BrandTokens[] = [
     }
   },
   {
+    "id": "nike-design-analysis",
+    "name": "Nike-design-analysis",
+    "description": "A photography-first commerce system built on extreme typographic contrast — towering uppercase Futura display lockups burned into editorial campaign imagery, sitting above a dense, neutral, near-monochrome retail chrome of pill-shaped black CTAs, gray search and tag pills, and tight 8px-grid product cards. The brand's voice is athletic, kinetic, and absolute: pure black, pure white, a single soft surface gray, and a deliberately small set of semantic accents (sale red, success green, restrained category tints) — every chromatic moment is reserved for editorial photography or pricing signal, never decorative chrome.\n",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#111111",
+      "secondary": "#111111",
+      "accent": "#111111",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "1.5rem",
+    "typography": {
+      "heading": "Nike Futura ND",
+      "body": "Helvetica Now Text",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-37",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
     "id": "nimbus",
     "name": "Nimbus",
     "description": "Cloud-native SaaS — airy oklch palette, no explicit foregrounds (inferred at compile time).",
@@ -130,6 +1684,867 @@ export const INGESTED: BrandTokens[] = [
     }
   },
   {
+    "id": "nintendo-com-2001-analysis",
+    "name": "Nintendo.com (2001) Analysis",
+    "description": "An analysis of Nintendo.com's 2001 design language — a brushed-periwinkle \"console chrome\" interface where every panel is a beveled metal plate, navigation glows amber over a halftone-dotted carbon bar, and bold outlined display type sits on circuit-board hero fields. A Y2K hardware aesthetic that treats the web page like the faceplate of a game system.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#e60012",
+      "secondary": "#e60012",
+      "accent": "#e60012",
+      "muted": "#f0f0f0",
+      "destructive": "#e60012",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.375rem",
+    "typography": {
+      "heading": "Arial Black",
+      "body": "Arial",
+      "baseSize": 12
+    }
+  },
+  {
+    "id": "readme-md-38",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "notion-design-analysis",
+    "name": "Notion-design-analysis",
+    "description": "Notion presents itself as the all-in-one workspace through a confident, illustration-rich brand voice — anchored by a deep navy hero band ({colors.brand-navy}) decorated with brand-colored sticky-note dots and mesh wire illustrations, a signature purple pill primary CTA ({colors.primary}), and a rich palette of pastel-tinted feature cards that echo the colorful database properties of the live product. The system uses a Notion-Sans (Inter-based) typeface across every UI surface, anchors a 4-tier pricing comparison (Free / Plus / Business / Enterprise), and presents the live workspace UI mockup directly inside the hero band. Coverage spans homepage, Enterprise, Product AI, Product Agents, Startups, and Pricing surfaces.",
+    "colors": {
+      "background": "#f6f5f4",
+      "foreground": "#0a0a0a",
+      "primary": "#5645d4",
+      "secondary": "#5645d4",
+      "accent": "#5645d4",
+      "muted": "#bbb8b1",
+      "destructive": "#ef4444",
+      "border": "#dad9d8"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Notion Sans",
+      "body": "Notion Sans",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-39",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "nvidia-design-analysis",
+    "name": "NVIDIA-design-analysis",
+    "description": "An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA, every active tab, and the small decorative corner squares that mark out cards. The system is unapologetically angular: 2px radius across every surface, tight bold sans-serif typography in NVIDIA's proprietary EMEA cut, and a hairline gray rule that separates dense multi-column technical content. There is no decorative gradient, no atmospheric mesh, no soft drop shadow — just black, white, gray, and green stacked into a structured editorial grid that scales from product cards to massive industry landing pages without bending its rules.\n",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#76b900",
+      "secondary": "#76b900",
+      "accent": "#76b900",
+      "muted": "#f0f0f0",
+      "destructive": "#e52020",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.125rem",
+    "typography": {
+      "heading": "NVIDIA-EMEA",
+      "body": "NVIDIA-EMEA",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-40",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "ollama-design-analysis",
+    "name": "Ollama-design-analysis",
+    "description": "An almost defiantly minimal documentation-first system that treats the home page like a Markdown README — paper-white canvas, 36px center-aligned heading, a single black pill CTA, an inline terminal install snippet, and a hand-drawn llama mascot as the only ornamental element. No gradient, no hero photography, no marketing pyrotechnics. The chrome is a tiny utility palette of pure black, pure white, and three neutral grays; every interactive element is fully rounded into a pill (`{rounded.full}`); typography is SF Pro Rounded for headings paired with system sans for body and ui-monospace for code. Pricing tiers, FAQs, and \"your data stays yours\" guarantees all sit on the same flat canvas inside thin-border cards — the system is the documentation, and the documentation is the system.\n",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "accent": "#000000",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "SF Pro Rounded",
+      "body": "ui-sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-41",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "opencode-design-analysis",
+    "name": "OpenCode-design-analysis",
+    "description": "A terminal-native marketing system rendered entirely in Berkeley Mono — every word on the page, from the hero headline down to the footer fine print, is monospaced. The page itself reads like a manpage or a static-site README: warm cream canvas (`#fdfcfc`), nearly-black ink (`#201d1d`), 4px-radius rectangles for the few interactive elements, and bracketed `[+]`/`[-]` ASCII markers used as bullets. The brand's only \"visual moment\" is a single dark hero card that mocks up the OpenCode TUI itself — black background, monospaced terminal output, ASCII pipe characters, and a wordmark rendered as block-pixel ASCII. Every section sits as a hairline-bordered text block on the cream canvas with no shadows, no gradients, no decorative imagery, and no non-monospaced character anywhere in the system.\n",
+    "colors": {
+      "background": "#fdfcfc",
+      "foreground": "#0a0a0a",
+      "primary": "#007aff",
+      "secondary": "#201d1d",
+      "accent": "#007aff",
+      "muted": "#eeeded",
+      "destructive": "#ff3b30",
+      "border": "#e0dfdf"
+    },
+    "radius": "0.25rem",
+    "typography": {
+      "heading": "Berkeley Mono",
+      "body": "Berkeley Mono",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-42",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "pinterest-design-analysis",
+    "name": "Pinterest-design-analysis",
+    "description": "A photography-first discovery system organized around the Pinterest Red CTA, the masonry pin grid, and a soft warm-cream chrome that gets out of the imagery's way. The home page is a content-discovery tool wearing the chrome of a magazine publisher: 70px display headlines, friendly Pin Sans typography, fully-rounded pill buttons (16px) on a cream-tinted neutral palette, and a sticky red \"Sign up\" CTA that anchors every viewport. Pin imagery is the system's load-bearing visual element — square, portrait, and landscape pins tile in a column-based masonry grid where each tile is a fully-rounded 16px-radius card, separated by tight 8px gutters. The chrome is otherwise quiet: warm grays, true whites, and a single saturated red — no decorative gradients, no atmospheric backgrounds, no shadows beyond a soft modal scrim.\n",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#e60023",
+      "secondary": "#e60023",
+      "accent": "#e60023",
+      "muted": "#f0f0f0",
+      "destructive": "#9e0a0a",
+      "border": "#e2e2e2"
+    },
+    "radius": "1rem",
+    "typography": {
+      "heading": "Pin Sans",
+      "body": "Pin Sans",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-43",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "playstation-design-analysis",
+    "name": "PlayStation-design-analysis",
+    "description": "A three-surface marketing system organized around alternating black, white, and PlayStation Blue chapters that scroll past the viewer like a console launch trailer. Each section has a single editorial purpose — hero photography, console product render, PS Plus tier callout, news strip — and each owns one of three full-bleed canvas modes. The chrome is unusually quiet for a gaming brand: bright PlayStation Blue (`#0070d1`) carries every primary CTA as a fully-rounded pill, the proprietary SST face renders display copy at a signature weight 300 (light) for an airy, premium feel, and a crisp 8px-radius secondary card system carries product info on either canvas mode. The system never decorates — no gradient backgrounds on chrome, no atmospheric mesh, no drop shadows beyond a faint section-divide. Imagery does all the heavy lifting: console glamour shots, game key art, and PS Plus tier illustrations occupy 60-90% of every section, with copy compressed into a small editorial slot.\n",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#0070d1",
+      "secondary": "#0070d1",
+      "accent": "#0070d1",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "PlayStation SST",
+      "body": "PlayStation SST",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-44",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "posthog-design-analysis",
+    "name": "PostHog-design-analysis",
+    "description": "A playful developer-tools system rendered on a warm cream canvas with hand-drawn hedgehog mascots dotted across every page like marginalia in a sketchbook. The chrome reads like a friendly engineering blog: olive-gray ink (#4d4f46) for body, deep olive-charcoal (#23251d) for headlines, IBM Plex Sans Variable typography in tight 1.43-line-height paragraphs, and a single saturated yellow-orange CTA pill (#f7a501) carrying every primary action. The system actively rejects the genre's typical somber dark-tech aesthetic in favor of a creamy, textbook-illustration sensibility — bordered cards stack on the cream canvas with 4–6px radii, doc sidebars use rounded outline-icon mini-illustrations, and the home page leans on cartoon characters (hedgehogs in lab coats, hedgehogs at terminals, hedgehogs in lounge chairs) as its signature decoration. Code samples and product analytics charts live inside white-on-cream cards with thin olive borders; the contrast between the playful illustration and the data-dense product imagery is the brand's signature voice.\n",
+    "colors": {
+      "background": "#eeefe9",
+      "foreground": "#0a0a0a",
+      "primary": "#f7a501",
+      "secondary": "#f7a501",
+      "accent": "#f7a501",
+      "muted": "#e0e1dc",
+      "destructive": "#ef4444",
+      "border": "#d3d4ce"
+    },
+    "radius": "0.375rem",
+    "typography": {
+      "heading": "IBM Plex Sans Variable",
+      "body": "IBM Plex Sans Variable",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-45",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-6",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-46",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "renault-design-analysis",
+    "name": "Renault-design-analysis",
+    "description": "Renault's web presence pairs the freshly-modernised Renault diamond\n(the 2021 flat-line rhombus mark) with a stark black-and-white canvas, a\nsignature Sunlight Yellow accent, and the proprietary NouvelR display\ntypeface. The system reads as confident, photography-first automotive — large\nhero cars on neutral or atmospheric backdrops, square-edged or barely-rounded\ncontainers, and a small disciplined palette where every coloured element is\nintentional. Tile grids, full-bleed banners, and a recurring \"configurator\"\nsurface (white card, yellow accent dots, neutral product chrome) carry the\nmass-market dealership tone without crossing into luxury.\n",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#ffed00",
+      "secondary": "#ffed00",
+      "accent": "#ffed00",
+      "muted": "#f0f0f0",
+      "destructive": "#be6464",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.25rem",
+    "typography": {
+      "heading": "NouvelR",
+      "body": "NouvelR",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-47",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "replicate-design-analysis",
+    "name": "Replicate-design-analysis",
+    "description": "Replicate's marketing surfaces pair the warm-cream developer-tools aesthetic\nof an indie ML playground with a confident hot-orange brand accent and a\nsignature display typeface (rb-freigeist-neue) sized aggressively large at\n72px+. The system reads as \"AI lab notebook crossed with print magazine\":\ncream and bone surfaces, dark ink type, monospace code wells, irregular\nhand-drawn-feeling diagrams, and a rich orange used scarcely on the most\nconsequential CTA. Photography of contributors and example outputs is\nsquare-ish with mid-radius corners; everything else is borderless or hairline.\n",
+    "colors": {
+      "background": "#f9f7f3",
+      "foreground": "#0a0a0a",
+      "primary": "#ea2804",
+      "secondary": "#ea2804",
+      "accent": "#ea2804",
+      "muted": "#ebe9e5",
+      "destructive": "#ef4444",
+      "border": "#dcdbd7"
+    },
+    "radius": "0.625rem",
+    "typography": {
+      "heading": "rb-freigeist-neue",
+      "body": "basier-square",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-48",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "resend-design-analysis",
+    "name": "Resend-design-analysis",
+    "description": "Resend's marketing surfaces sit on a near-pure black canvas with off-white\ntext and a single signature color — the deep editorial-serif Domaine\nDisplay headline mark — that gives an otherwise utilitarian developer-tool\nbrand its print-magazine confidence. The system pairs Domaine Display\n(oversized 76px–96px serif, ss01/ss04/ss11 features on) with ABC Favorit\nfor body and Inter for UI. Surfaces rely on subtle 6–9% opacity gradient\nglows, hairline 1px borders made from translucent white, and a strict\nrounded-12px container vocabulary. There is no decorative chrome — just\ntype, code, and atmospheric depth.\n",
+    "colors": {
+      "background": "#000000",
+      "foreground": "#fafafa",
+      "primary": "#fcfdff",
+      "secondary": "#fcfdff",
+      "accent": "#fcfdff",
+      "muted": "#0f0f0f",
+      "destructive": "#ef4444",
+      "border": "#1e1e1e"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Domaine Display",
+      "body": "Inter",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-49",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "revolut-design-analysis",
+    "name": "Revolut-design-analysis",
+    "description": "Revolut's marketing surfaces pair a stark black canvas with the brand's\ncobalt-violet (`#494fdf`) and a wide accent palette of deep, fully-saturated\nproduct colours — teal, light-blue, deep pink, light-green, warning orange.\nThe system reads as fintech-meets-product-brochure: oversized 80px–136px\nAeonik Pro display headlines, generous whitespace, photography-led hero\nbands, and full-width product mockups (cards, phones, terminals) shown as\nhero objects inside near-black sections. Most surfaces are either black or\noff-white; pill-shaped buttons and rounded-12/20px content cards carry the\nconsumer-financial-app feel without crossing into playful territory.\n",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#494fdf",
+      "secondary": "#494fdf",
+      "accent": "#494fdf",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.75rem",
+    "typography": {
+      "heading": "Aeonik Pro",
+      "body": "Inter",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-50",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-7",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-51",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-8",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-52",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "sentri-inspired-design-analysis",
+    "name": "Sentri-Inspired-design-analysis",
+    "description": "An inspired interpretation of Sentri's design language — a developer-tools brand built on a deep purple-violet midnight canvas, electric lime accents, and a slightly subversive illustrated personality. The system pairs a custom display sans (chunky, playful, near-condensed) with the open Rubik family for UI copy and Monaco for code, then leans on dark-on-light pricing surfaces, sticker-style mascots, and a single-color CTA hierarchy where black-violet buttons read as the primary action against either polarity.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#150f23",
+      "secondary": "#150f23",
+      "accent": "#150f23",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Sentri Display, Rubik, system-ui, sans-serif",
+      "body": "Rubik, -apple-system, system-ui, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-53",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "shopifi-inspired-design-analysis",
+    "name": "Shopifi-Inspired-design-analysis",
+    "description": "An inspired interpretation of Shopifi's design language — a cinematic commerce platform that runs two parallel design tracks. The marketing-hero and product-narrative pages live on near-black canvases with full-bleed photography of merchants, giant Neue Haas Grotesk display type at thin weights, and a single black-pill CTA stroked in white. The transactional pages (pricing, signup, dashboards) flip to a cream-mint canvas with pastel aloe and pistachio greens, the same pill button vocabulary, and Inter for UI body. The two tracks share typographic DNA but diverge sharply in canvas polarity — and that choice is the brand.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "accent": "#000000",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "NeueHaasGrotesk Display, Helvetica, Arial, sans-serif",
+      "body": "Inter Variable, Inter, Helvetica, Arial, sans-serif",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-54",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "slacc-inspired-design-analysis",
+    "name": "Slacc-Inspired-design-analysis",
+    "description": "An inspired interpretation of Slacc's design language — a workplace messaging brand built on a deep aubergine primary, with cream-lavender hero gradients, blue inline links, and pill CTAs. The system pairs a proprietary humanist sans for display with a separate utility sans for body, and stages product UI mockups inside soft pastel-mesh hero composites that act as both decoration and feature explanation.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#4a154b",
+      "secondary": "#4a154b",
+      "accent": "#4a154b",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Salesforce-Avant-Garde, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      "body": "Salesforce-Sans, system-ui, -apple-system, sans-serif",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "spacex-inspired-design-analysis",
+    "name": "Spacex-Inspired-design-analysis",
+    "description": "An inspired interpretation of Spasex's design language — a mission-oriented aerospace brand built on pure black canvas, full-bleed photographic and video heroes of rockets and Mars landscapes, and uppercase D-DIN display type set in tight vertical leading. UI chrome is intentionally minimal a single ghost outlined pill button per band, all-caps eyebrow microtext, and a fixed top nav over photography. The system is unapologetically austere — black, white, and the imagery itself.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "accent": "#000000",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "1rem",
+    "typography": {
+      "heading": "D-DIN-Bold, Arial Narrow, Arial, Verdana, sans-serif",
+      "body": "D-DIN, Arial, Verdana, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-55",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-9",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-56",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-10",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-57",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
     "id": "mybrand",
     "name": "MyBrand",
     "description": "One-sentence description of the visual identity.",
@@ -142,6 +2557,342 @@ export const INGESTED: BrandTokens[] = [
       "muted": "#eaeced",
       "destructive": "#ef4444",
       "border": "#dbdddf"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "stripi-inspired-design-analysis",
+    "name": "Stripi-Inspired-design-analysis",
+    "description": "An inspired interpretation of Stripi's design language — a financial-infrastructure brand built on a deep navy ink, an electric indigo primary, and a recurring atmospheric gradient mesh that occupies the upper third of nearly every marketing page. The system pairs the proprietary Sohne family at thin (300) weights with negative letter-spacing for editorial-density display headlines, and uses tabular-figure body type where money and numerics matter. Buttons are tight-radius pills, cards live on near-white surfaces, and the dashboard track flips polarity to a familiar dark-app shell.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#533afd",
+      "secondary": "#533afd",
+      "accent": "#533afd",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "body": "sohne-var, 'SF Pro Display', system-ui, -apple-system, sans-serif",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-58",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-11",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-59",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "superhumon-inspired-design-analysis",
+    "name": "Superhumon-Inspired-design-analysis",
+    "description": "An inspired interpretation of Superhumon's design language — a fast-email productivity brand split between an editorial dark hero (deep indigo navy with violet-sky atmospheric backdrop and a portrait subject) and a quiet white content body with off-warm-grey ink. The system uses a single proprietary variable display sans, heavy weight 460–540 with tight tracking, and a deep-teal closing CTA band that breaks the indigo/white rhythm with a warm dark interlude. Buttons are tight rounded rectangles, pricing is sober and dense, and the brand reads more like a high-end newsletter than a SaaS app.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#1b1938",
+      "secondary": "#1b1938",
+      "accent": "#1b1938",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "body": "'Super Sans VF', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-60",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-12",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-61",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "design-md-13",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "readme-md-62",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "together-ai-inspired-design-analysis",
+    "name": "Together-AI-Inspired-design-analysis",
+    "description": "An inspired interpretation of Together AI's design language — an AI infrastructure platform whose surface alternates between near-black hero bands (with a three-color orange-magenta-periwinkle gradient as the single piece of brand chrome) and bright white research / pricing / docs bands, knit together by a custom display sans and an uppercase mono eyebrow face.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "accent": "#000000",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "The Future, Inter, Helvetica Neue, Arial, sans-serif",
+      "body": "The Future, Inter, Helvetica Neue, Arial, sans-serif",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-63",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "uber-inspired-design-analysis",
+    "name": "Uber-Inspired-design-analysis",
+    "description": "An inspired interpretation of Uber's design language — a transportation-and-delivery super-app brand whose web surface is a black-and-white duet, framed by a custom geometric display sans, accented by a single signature pill shape (radius 999px) on every interactive element, and decorated only by editorial 4:3 illustrations of riders, drivers, and city objects.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "accent": "#000000",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "UberMove, UberMoveText, system-ui, Helvetica Neue, Arial, sans-serif",
+      "body": "UberMoveText, system-ui, Helvetica Neue, Arial, sans-serif",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-64",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "vercel-inspired-design-analysis",
+    "name": "Vercel-Inspired-design-analysis",
+    "description": "An inspired interpretation of Vercel's design language — a developer-platform brand whose surface is a stark black-and-ink duet on near-white canvas, broken at hero scale by a multi-color mesh gradient (cyan / blue / magenta / amber) that acts as the entire decorative system, paired with a custom geometric sans for headlines and a monospaced caption face for technical labels.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#171717",
+      "secondary": "#171717",
+      "accent": "#171717",
+      "muted": "#f0f0f0",
+      "destructive": "#ee0000",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Geist, Inter, system-ui, -apple-system, sans-serif",
+      "body": "Geist, Inter, system-ui, -apple-system, sans-serif",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-65",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
     },
     "radius": "0.5rem",
     "typography": {
@@ -169,6 +2920,342 @@ export const INGESTED: BrandTokens[] = [
       "heading": "Fraunces",
       "body": "Nunito",
       "baseSize": 17
+    }
+  },
+  {
+    "id": "vodafone-inspired-design-analysis",
+    "name": "Vodafone-Inspired-design-analysis",
+    "description": "An inspired interpretation of Vodafone's design language — a telecom super-brand whose web surface alternates between editorial photography hero bands with massive uppercase display headlines and clean white content bands, anchored by the company's signature scarlet red CTA and the proprietary Vodafone display sans set at impossibly heavy 800 weight.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#e60000",
+      "secondary": "#e60000",
+      "accent": "#e60000",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.375rem",
+    "typography": {
+      "heading": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "body": "Vodafone, Vodafone Rg, Helvetica Neue, Arial, sans-serif",
+      "baseSize": 22
+    }
+  },
+  {
+    "id": "readme-md-66",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "voltagent-inspired-design-analysis",
+    "name": "Voltagent-Inspired-design-analysis",
+    "description": "An inspired interpretation of Voltagent's design language — a developer-focused AI agent engineering platform whose surface is an unrelenting near-black canvas broken only by a single electric-green brand accent, code-editor mockups inside the hero, and a precise grid of dark feature cards that read like a documentation site dressed as marketing.",
+    "colors": {
+      "background": "#101010",
+      "foreground": "#fafafa",
+      "primary": "#00d992",
+      "secondary": "#00d992",
+      "accent": "#00d992",
+      "muted": "#1e1e1e",
+      "destructive": "#ef4444",
+      "border": "#2c2c2c"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "body": "Inter, system-ui, -apple-system, sans-serif",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-67",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "warp-inspired-design-analysis",
+    "name": "Warp-Inspired-design-analysis",
+    "description": "An inspired interpretation of Warp's design language — an agentic terminal-and-development-environment brand whose surface is a warm near-charcoal canvas (a tint warmer than pure black), broken only by clean Inter typography, the occasional Instrument Serif italic moment, and dense terminal-mockup imagery; CTAs are unusually understated, with shape geometry running tighter than most marketing sites.",
+    "colors": {
+      "background": "#2b2622",
+      "foreground": "#fafafa",
+      "primary": "#f7f5f0",
+      "secondary": "#f7f5f0",
+      "accent": "#f7f5f0",
+      "muted": "#37332f",
+      "destructive": "#ef4444",
+      "border": "#443f3c"
+    },
+    "radius": "0.25rem",
+    "typography": {
+      "heading": "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "body": "Inter, system-ui, -apple-system, sans-serif",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-68",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "webflow-inspired-design-analysis",
+    "name": "Webflow-Inspired-design-analysis",
+    "description": "An inspired interpretation of Webflow's design language — a visual web development platform whose surface contrasts a deep near-black `#080808` primary against a generous white canvas, broken by a five-stop chromatic accent system (purple / pink / blue / orange / green) that maps to the brand's product categories, and anchored by the proprietary WF Visual Sans family used at restrained 500 / 600 weights with negative tracking.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#080808",
+      "secondary": "#080808",
+      "accent": "#080808",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "WF Visual Sans Variable, Inter, system-ui, -apple-system, sans-serif",
+      "body": "WF Visual Sans Variable, Inter, system-ui, sans-serif",
+      "baseSize": 28.8
+    }
+  },
+  {
+    "id": "readme-md-69",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "wired-inspired-design-analysis",
+    "name": "Wired-Inspired-design-analysis",
+    "description": "An inspired interpretation of Wired's design language — a flagship technology-magazine brand whose surface is a strict editorial duet of stark black wordmark on white canvas, anchored by a tall narrow custom display serif for hero headlines, a humanist serif body face for long-form reading, and a clean sans face for metadata; layout reads like a printed magazine ported to the web with very little marketing chrome.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#000000",
+      "secondary": "#000000",
+      "accent": "#000000",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0rem",
+    "typography": {
+      "heading": "WiredDisplay, \"Times New Roman\", Georgia, serif",
+      "body": "BreveText, Georgia, \"Times New Roman\", serif",
+      "baseSize": 19
+    }
+  },
+  {
+    "id": "readme-md-70",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "wise-inspired-design-analysis",
+    "name": "Wise-Inspired-design-analysis",
+    "description": "An inspired interpretation of Wise's design language — a global money-transfer brand whose surface combines an unusually heavy near-black display sans (weight 900 at 64–126 px) with a vivid lime-green brand accent, sage-tinted surface neutrals, and rounded white cards on a pale green-tinted canvas; the whole system reads more like a Scandinavian fintech magazine than a bank.",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#9fe870",
+      "secondary": "#9fe870",
+      "accent": "#9fe870",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.75rem",
+    "typography": {
+      "heading": "Wise Sans, Inter, system-ui, -apple-system, sans-serif",
+      "body": "Inter, system-ui, sans-serif",
+      "baseSize": 20
+    }
+  },
+  {
+    "id": "readme-md-71",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "xai-inspired-design-analysis",
+    "name": "xAI-Inspired-design-analysis",
+    "description": "An inspired interpretation of xAI's design language — Elon Musk's frontier-AI company whose web surface is a strict near-black canvas broken only by white pill outlines, occasional warm sunset / dusk gradient accents, a custom geometric sans (Universal Sans) for display, and an uppercase tracked monospace caption face; the whole system reads as engineered-cosmic, unmarketed.",
+    "colors": {
+      "background": "#0a0a0a",
+      "foreground": "#fafafa",
+      "primary": "#ffffff",
+      "secondary": "#ffffff",
+      "accent": "#ffffff",
+      "muted": "#181818",
+      "destructive": "#ef4444",
+      "border": "#272727"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "universalSans, Inter, system-ui, -apple-system, sans-serif",
+      "body": "universalSans, Inter, system-ui, sans-serif",
+      "baseSize": 18
+    }
+  },
+  {
+    "id": "readme-md-72",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
+    }
+  },
+  {
+    "id": "zapier-inspired-design-analysis",
+    "name": "Zapier-Inspired-design-analysis",
+    "description": "An inspired interpretation of Zapier's design language — a workflow-automation platform whose surface combines warm-cream neutrals (`#fffefb` canvas, `#f8f4f0` soft cream) with deep coffee ink (`#201515`) and a single saturated orange CTA accent (`#ff4f00`); typography pairs the proprietary Degular Display family at hero scale with Inter for sub-displays and body, giving the brand a confident-warm rather than cool-tech voice.",
+    "colors": {
+      "background": "#fffefb",
+      "foreground": "#0a0a0a",
+      "primary": "#ff4f00",
+      "secondary": "#ff4f00",
+      "accent": "#ff4f00",
+      "muted": "#f0efed",
+      "destructive": "#ef4444",
+      "border": "#e2e1de"
+    },
+    "radius": "0.75rem",
+    "typography": {
+      "heading": "Degular Display, Inter, system-ui, -apple-system, sans-serif",
+      "body": "Inter, system-ui, sans-serif",
+      "baseSize": 20
+    }
+  },
+  {
+    "id": "readme-md-73",
+    "name": "Unknown",
+    "description": "",
+    "colors": {
+      "background": "#ffffff",
+      "foreground": "#0a0a0a",
+      "primary": "#2563eb",
+      "secondary": "#92b1f5",
+      "accent": "#2563eb",
+      "muted": "#f0f0f0",
+      "destructive": "#ef4444",
+      "border": "#e2e2e2"
+    },
+    "radius": "0.5rem",
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "baseSize": 16
     }
   }
 ];
