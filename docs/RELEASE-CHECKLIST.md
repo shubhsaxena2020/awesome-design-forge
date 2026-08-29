@@ -37,6 +37,27 @@ Run before cutting a release. Every item is verifiable offline unless noted.
       no root/network). Document it as blocked, never as faked.
 
 ## Kinetic Studio
-- [ ] Environment-blocked (no network for the upstream Studio + browser libs).
-      Keep the `design-md` corpus import as the offline equivalent and note the
-      limitation; revisit only on a networked host.
+
+**What it is:** Kinetic Studio is the upstream design-token *studio* that can
+export brand token sets to DESIGN.md. In an ideal flow you'd point it at a live
+Kinetic workspace and pull specs straight into `design-md/` for ingestion.
+
+**Why it is blocked here (offline build VPS):**
+- No network to reach the upstream Kinetic Studio API/workspace.
+- Even if specs were fetched, the visual-regression browser (`chromium`) cannot
+  launch here (missing `libnss3`/`libdbus`/`libxkbcommon`/`libgbm`/`libasound`),
+  so there is no way to close the loop and screenshot the result.
+- `pnpm link --global` (issue #3) is also human-gated and not run by automation.
+
+**Offline equivalent (already done):** the `design-md/` corpus import IS the
+offline stand-in. Issue #2 shipped a clean 84-brand bake (76 `DESIGN.md` + 1
+`starter.md` + 8 loose specs) via `pnpm gen:brands` / `design-forge ingest`, with
+the `isBrandSpec` gate dropping phantom README/prose files. That covers the
+"import a brand set" goal without Kinetic Studio.
+
+**When to revisit:** only on a networked host with browser system libs (e.g. the
+CI `visual` runner). Then: authenticate Kinetic Studio, export the workspace to
+`design-md/`, re-bake, and run `pnpm test:visual` to seed baselines. Until then,
+keep the corpus import as the source of truth and do not claim a Kinetic import
+succeeded.
+

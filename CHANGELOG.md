@@ -1,6 +1,33 @@
 # Changelog
 
-## [1.9.0] - 2026-08-29 (design-forge)
+## [1.10.0] - 2026-08-29 (design-forge)
+
+### Stretch / honesty (Backlog Phase D)
+- **D14** — `packages/preview/e2e/visual.spec.ts` now self-skips when Chromium
+  cannot launch (missing system libs on the build VPS) instead of erroring. The
+  suite runs for real on a capable host / the CI `visual` job. Verified: 5 tests
+  skip cleanly here (`pnpm test:visual` → 5 skipped, exit 0).
+- **D15** — `docs/RELEASE-CHECKLIST.md` Kinetic Studio section expanded: what it
+  is, why it is offline-blocked (no network + no browser libs + human-gated
+  `pnpm link`), the offline equivalent (the `design-md/` corpus import from #2),
+  and when to revisit.
+- **D16** — `scripts/bench-ingest.ts` (`pnpm bench:ingest`) benchmarks the full
+  ingest; real measurement: **84 specs / 157 `.md` files in ~291 ms**. Note in
+  `docs/benchmarks.md`.
+- **D17** — `scripts/gen-seed-subset.ts` (`pnpm gen:seed-subset`) materialises the
+  visual-regression seed subset to `packages/preview/e2e/seed-subset.json` for
+  deterministic replays/diffs as the corpus grows.
+- **D18** — `docs/OPERATOR-pnpm-link.md`: the exact, ready-to-run `pnpm link --global`
+  command for issue #3 with prerequisites, verification, and revert steps. Explicitly
+  human-gated — automation does not run it. Referenced from CONTRIBUTING.md.
+
+### Verification (offline)
+- `pnpm typecheck` clean; `pnpm lint` → 0 errors (14 non-blocking warnings);
+  `pnpm test` → 289 passed.
+- `pnpm test:visual` → 5 skipped (browser unavailable), exit 0.
+- `pnpm bench:ingest` → 84 specs in ~291 ms.
+
+
 
 ### DX / CI (Backlog Phase C)
 - **Added `pnpm lint`** (Backlog C10): ESLint 9 flat config (`eslint.config.js`)
